@@ -4,6 +4,8 @@
 
 MenuControl\MenuControl.cpp
 
+MotorControl\MotorControl.cpp
+
 Sketch.cpp
 
 src\libraries\Adafruit_Unified_Sensor\Adafruit_Sensor.cpp
@@ -31,4 +33,8 @@ src\libraries\Servo\src\samd\Servo.cpp
 src\libraries\Servo\src\sam\Servo.cpp
 
 src\libraries\Servo\src\stm32f4\Servo.cpp
+
+TemperatureControl\TemperatureControl.cpp
+
+WindowControl\WindowControl.cpp
 

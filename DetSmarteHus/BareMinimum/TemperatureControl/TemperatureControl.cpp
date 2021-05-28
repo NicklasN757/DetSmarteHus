@@ -7,3 +7,7 @@ float calculateTemp(int sensorValue)
 	float tempC = tempK - 273.15;
 	return tempC;
 }
+void GetCurrentTemperature()
+{
+	currentTemperaturesKids = calculateTemp(analogRead(A11));
+}

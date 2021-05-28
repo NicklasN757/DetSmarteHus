@@ -11,8 +11,6 @@
 
 #include <Arduino.h>
 
-int calculateMotorSpeed(int potentiometerValue)
-
-
+int calculateMotorSpeed(int potentiometerValue);
 
 #endif /* MOTORCONTROL_H_ */

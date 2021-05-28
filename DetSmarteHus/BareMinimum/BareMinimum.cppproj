@@ -344,6 +344,12 @@
     <Compile Include="MenuControl\MenuControl.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MotorControl\MotorControl.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MotorControl\MotorControl.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Sketch.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -386,6 +392,18 @@
     <Compile Include="src\libraries\Servo\src\stm32f4\Servo.cpp">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="TemperatureControl\TemperatureControl.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="TemperatureControl\TemperatureControl.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="WindowControl\WindowControl.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="WindowControl\WindowControl.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Content Include="readme.html">
     </Content>
   </ItemGroup>
@@ -420,6 +438,9 @@
     <Folder Include="include\libraries\Servo\src\sam\" />
     <Folder Include="include\libraries\Servo\src\stm32f4\" />
     <Folder Include="MenuControl" />
+    <Folder Include="MotorControl" />
+    <Folder Include="WindowControl" />
+    <Folder Include="TemperatureControl" />
     <Folder Include="src\" />
     <Folder Include="src\libraries\" />
     <Folder Include="src\libraries\Adafruit_Unified_Sensor\" />

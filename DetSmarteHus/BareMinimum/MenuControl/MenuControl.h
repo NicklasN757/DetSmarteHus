@@ -14,8 +14,16 @@
 
 extern LiquidCrystal lcd;
 
+//Fan variables
 extern int currentFanSpeed;
 
-void lcdMenuLoader(int menuStage);
+//Temperature variables
+extern int currentSetTemperatureDining;
+extern int currentSetTemperatureKids;
+extern int currentTemperaturesDining;
+extern int currentTemperaturesKids;
+
+//Loads the right menu based on menuStage
+void lcdMenuLoader(int menuStage, int ns);
 
 #endif /* MENUCONTROL_H_ */

@@ -5,13 +5,17 @@
 
 #include "MenuControl/MenuControl.h"
 #include "TemperatureControl/TemperatureControl.h"
+#include "MotorControl/MotorControl.h"
+#include "WindowControl/WindowControl.h"
 
 int motorPin = 6;
 int motorPotentiometerPin = A10;
-int thermistorPin = A11;
 
 int potentiometerValue;
 int currentMenuStage;
+int previousMenuStage;
+
+
 
 #pragma region FanControlSettings
 	//Speed in %
@@ -28,6 +32,13 @@ int currentMenuStage;
 	int hysteresis = 4;
 #pragma endregion
 
+#pragma region WindowControlSettings
+	//Bool to check if windows is open
+	bool WindowIsOpen = false;
+	//Windows Auto Mode
+	bool windowAutoMode = true;
+#pragma endregion
+
 #pragma region LCD setup
 //LCD is connected to these pins
 const int rs = 8, en = 9, d4 = 10, d5 = 11, d6 = 12, d7 = 13;
@@ -39,7 +50,6 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 //Row count
 const byte Rows = 4;
 //Cols count
-
 const byte Cols = 4;
 
 //Keypad map 
@@ -58,18 +68,21 @@ byte colPins[Cols] = {25, 24, 23, 22};
 Keypad kpd = Keypad(makeKeymap(Keys), rowPins, colPins, Rows, Cols);
 #pragma endregion
 
-int calculateMotorSpeed(int potentiometerValue)
-{
-	return potentiometerValue / 4;
-}
+#pragma region DHT11 sensor setup
+#define DHTTYPE DHT11
+#define DHTPIN 2
+
+DHT dht(DHTPIN, DHTTYPE);
+#pragma endregion
 
 void setup() 
 {
 	lcd.begin(16, 2);
-	lcdMenuLoader(4);
+	
 }
 
 void loop() 
 {
-	
+	lcdMenuLoader(8, NULL);
+	GetCurrentTemperature();
 }
