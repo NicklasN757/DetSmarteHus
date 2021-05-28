@@ -1430,7 +1430,7 @@ END GROUP
  *(.fini0)
                 0x000013a0                _etext = .
 
-.data           0x00800200       0xf8 load address 0x000013a0
+.data           0x00800200       0xfa load address 0x000013a0
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -1440,38 +1440,38 @@ END GROUP
                 0x00800204                rowPins
  .data.Keys     0x00800208       0x10 Sketch.o
                 0x00800208                Keys
+ .data.currentFanSpeed
+                0x00800218        0x2 Sketch.o
+                0x00800218                currentFanSpeed
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800218       0xb7 MenuControl/MenuControl.o
+                0x0080021a       0xb7 MenuControl/MenuControl.o
                                  0xb8 (size before relaxing)
  .rodata._ZTV6Keypad
-                0x008002cf        0xa src/libraries/Keypad/src/Keypad.o
-                0x008002cf                _ZTV6Keypad
+                0x008002d1        0xa src/libraries/Keypad/src/Keypad.o
+                0x008002d1                _ZTV6Keypad
  .rodata._ZTV13LiquidCrystal
-                0x008002d9        0xc src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x008002d9                _ZTV13LiquidCrystal
+                0x008002db        0xc src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x008002db                _ZTV13LiquidCrystal
  .rodata._ZTV14HardwareSerial
-                0x008002e5       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x008002e5                _ZTV14HardwareSerial
+                0x008002e7       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x008002e7                _ZTV14HardwareSerial
  *(.gnu.linkonce.r*)
-                0x008002f8                . = ALIGN (0x2)
- *fill*         0x008002f7        0x1 
-                0x008002f8                _edata = .
-                0x008002f8                PROVIDE (__data_end, .)
+                0x008002fa                . = ALIGN (0x2)
+ *fill*         0x008002f9        0x1 
+                0x008002fa                _edata = .
+                0x008002fa                PROVIDE (__data_end, .)
 
-.bss            0x008002f8      0x1b9
-                0x008002f8                PROVIDE (__bss_start, .)
+.bss            0x008002fa      0x1b7
+                0x008002fa                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.kpd       0x008002f8       0x64 Sketch.o
-                0x008002f8                kpd
- .bss.lcd       0x0080035c       0x18 Sketch.o
-                0x0080035c                lcd
- .bss.currentFanSpeed
-                0x00800374        0x2 Sketch.o
-                0x00800374                currentFanSpeed
+ .bss.kpd       0x008002fa       0x64 Sketch.o
+                0x008002fa                kpd
+ .bss.lcd       0x0080035e       0x18 Sketch.o
+                0x0080035e                lcd
  .bss.ServoCount
                 0x00800376        0x1 src/libraries/Servo/src/avr/Servo.o
                 0x00800376                ServoCount
@@ -1492,7 +1492,7 @@ END GROUP
  *(COMMON)
                 0x008004b1                PROVIDE (__bss_end, .)
                 0x000013a0                __data_load_start = LOADADDR (.data)
-                0x00001498                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000149a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008004b1        0x0
                 [!provide]                PROVIDE (__noinit_start, .)

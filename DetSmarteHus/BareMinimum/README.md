@@ -22,3 +22,4 @@
 #### Funtione Optional
 
 1. Hoveddøren skal kunne låses ved hjælp af et keycard.
+2. Lyset i sturen og børneværelserne skal kunne styres fra infoskærmen.

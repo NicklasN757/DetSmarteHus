@@ -4,6 +4,7 @@
 #include <Keypad.h>
 
 #include "MenuControl/MenuControl.h"
+#include "TemperatureControl/TemperatureControl.h"
 
 int motorPin = 6;
 int motorPotentiometerPin = A10;
@@ -14,7 +15,7 @@ int currentMenuStage;
 
 #pragma region FanControlSettings
 	//Speed in %
-	int currentFanSpeed = 0;
+	int currentFanSpeed = 50;
 	//Fan Auto Mode
 	bool fanAutoMode = true;
 #pragma endregion
@@ -57,14 +58,6 @@ byte colPins[Cols] = {25, 24, 23, 22};
 Keypad kpd = Keypad(makeKeymap(Keys), rowPins, colPins, Rows, Cols);
 #pragma endregion
 
-float calculateTemp(int sensorValue)
-{
-	float temp = log(10000.0 * (1024.0 / sensorValue - 1));
-	float tempK = 1/(0.001129148 + (0.000234125 + (0.0000000876741 * temp * temp)) * temp);
-	float tempC = tempK - 273.15;
-	return tempC;
-}
-
 int calculateMotorSpeed(int potentiometerValue)
 {
 	return potentiometerValue / 4;
@@ -73,7 +66,7 @@ int calculateMotorSpeed(int potentiometerValue)
 void setup() 
 {
 	lcd.begin(16, 2);
-	lcdMenuLoader(3);
+	lcdMenuLoader(4);
 }
 
 void loop() 

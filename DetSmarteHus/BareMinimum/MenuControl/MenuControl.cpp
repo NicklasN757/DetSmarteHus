@@ -14,7 +14,7 @@ void lcdMenuLoader(int menuStage = 0)
 		lcd.write("Lights>B");
 		break;
 		
-		#pragma region Heat Menus
+#pragma region Heat Menus
 		//Heat menu
 		case 1:
 		lcd.setCursor(0, 0);
@@ -25,7 +25,7 @@ void lcdMenuLoader(int menuStage = 0)
 		lcd.write("C<Windows");
 		break;
 		
-		#pragma region Fan Controls Menus
+#pragma region Fan Controls Menus
 		//Fan Control menu if Auto Mode is on
 		case 2:
 		lcd.setCursor(0, 0);
@@ -58,16 +58,16 @@ void lcdMenuLoader(int menuStage = 0)
 		lcd.write("Inc.>C");
 		break;
 		
-		#pragma endregion
+#pragma endregion
 		
-		#pragma region Temperature Menus
+#pragma region Temperature Menus
 		case 5:
 		lcd.setCursor(0, 0);
 		lcd.write("");
 		break;
-		#pragma endregion
+#pragma endregion
 		
-		#pragma endregion
+#pragma endregion
 		
 		//Error menu
 		default:

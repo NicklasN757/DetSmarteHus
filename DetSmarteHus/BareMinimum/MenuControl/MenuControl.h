@@ -14,12 +14,8 @@
 
 extern LiquidCrystal lcd;
 
-//Fan Speed in %
 extern int currentFanSpeed;
 
 void lcdMenuLoader(int menuStage);
-
-
-
 
 #endif /* MENUCONTROL_H_ */
