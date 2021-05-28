@@ -39,7 +39,7 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  ..\include\libraries\LiquidCrystal\src/LiquidCrystal.h \
  ..\\..\ArduinoCore\include\core/Print.h \
  ..\include\libraries\Keypad\src/Keypad.h \
- ..\include\libraries\Keypad\src/Key.h
+ ..\include\libraries\Keypad\src/Key.h .././MenuControl/MenuControl.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -122,3 +122,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ..\include\libraries\Keypad\src/Keypad.h:
 
 ..\include\libraries\Keypad\src/Key.h:
+
+.././MenuControl/MenuControl.h:

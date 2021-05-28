@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+MenuControl\MenuControl.cpp
+
 Sketch.cpp
 
 src\libraries\Adafruit_Unified_Sensor\Adafruit_Sensor.cpp
