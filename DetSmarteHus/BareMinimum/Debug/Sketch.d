@@ -41,6 +41,8 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  ..\include\libraries\Keypad\src/Keypad.h \
  ..\include\libraries\Keypad\src/Key.h .././MenuControl/MenuControl.h \
  .././TemperatureControl/TemperatureControl.h \
+ ..\include\libraries\Adafruit_Unified_Sensor/Adafruit_Sensor.h \
+ ..\include\libraries\DHT_sensor_library/DHT.h \
  .././MotorControl/MotorControl.h .././WindowControl/WindowControl.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
@@ -128,6 +130,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././MenuControl/MenuControl.h:
 
 .././TemperatureControl/TemperatureControl.h:
+
+..\include\libraries\Adafruit_Unified_Sensor/Adafruit_Sensor.h:
+
+..\include\libraries\DHT_sensor_library/DHT.h:
 
 .././MotorControl/MotorControl.h:
 

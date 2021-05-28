@@ -15,13 +15,14 @@
 
 extern DHT dht;
 
+//Temperature and humidity variables
 extern int currentSetTemperatureDining;
 extern int currentSetTemperatureKids;
 extern int currentTemperaturesDining;
 extern int currentTemperaturesKids;
-extern int hysteresis;
+extern int currentHumidity;
+extern int currentSetHumidity;
 
-float calculateTemp(int sensorValue);
-void GetCurrentTemperature();
+void GetCurrentTemperatureAndHumidity();
 
 #endif /* TEMPERATURECONTROL_H_ */

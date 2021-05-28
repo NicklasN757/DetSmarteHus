@@ -7,7 +7,9 @@ float calculateTemp(int sensorValue)
 	float tempC = tempK - 273.15;
 	return tempC;
 }
-void GetCurrentTemperature()
+void GetCurrentTemperatureAndHumidity()
 {
-	currentTemperaturesKids = calculateTemp(analogRead(A11));
+	currentTemperaturesDining = calculateTemp(analogRead(A11));
+	currentTemperaturesKids = dht.readTemperature();
+	currentHumidity = dht.readHumidity();
 }

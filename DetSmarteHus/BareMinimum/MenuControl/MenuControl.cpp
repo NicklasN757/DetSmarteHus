@@ -23,8 +23,6 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 			lcd.write("Temps>B");
 			lcd.setCursor(0, 1);
 			lcd.write("C<Window");
-			lcd.setCursor(10, 1);
-			lcd.write("Back>D");
 		break;
 		
 #pragma region Fan Controls Menus
@@ -34,8 +32,6 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 			lcd.write("Auto Mode is on!");
 			lcd.setCursor(0, 1);
 			lcd.write("A<T.Off");
-			lcd.setCursor(10, 1);
-			lcd.write("Back>B");
 		break;
 		
 		//Fan Control menu if Auto Mode is off
@@ -52,12 +48,10 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 		case 4:
 			lcd.setCursor(0, 0);
 			lcd.write("Speed:"); lcd.print(currentFanSpeed); lcd.write("%");
-			lcd.setCursor(10, 0);
-			lcd.write("Done>A");
 			lcd.setCursor(0, 1);
-			lcd.write("B<Dec.");
+			lcd.write("A<Dec.");
 			lcd.setCursor(10, 1);
-			lcd.write("Inc.>C");
+			lcd.write("Inc.>B");
 		break;
 		
 #pragma endregion
@@ -73,7 +67,7 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 			lcd.write("Check>B");
 		break;
 		
-		//Set temperature Menu
+		//Set temperature chose room Menu
 		case 6:
 			lcd.setCursor(0, 0);
 			lcd.write("<->Chose Room<->");
@@ -87,7 +81,7 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 		//ns1 = Dining Room, ns2 = Kids Room
 		case 7:
 			lcd.setCursor(0, 0);
-			lcd.write("Set:"); 
+			lcd.write("Set temp:"); 
 			if (ns == 1)
 			{
 				lcd.print(currentSetTemperatureDining); 
@@ -101,54 +95,65 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 				lcd.write("??");
 			}
 			lcd.write(223);
-			lcd.setCursor(10, 0);
-			lcd.write("Done>A");
 			lcd.setCursor(0, 1);
-			lcd.write("B<Dec.");
+			lcd.write("A<Dec.");
 			lcd.setCursor(10, 1);
-			lcd.write("Inc.>C");
+			lcd.write("Inc.>B");
 		break;
 		
 		//Current temperatures menu
 		case 8:
 			lcd.setCursor(0, 0);
-			lcd.write("Dining:"); lcd.print(currentTemperaturesDining); lcd.write(223);
-			lcd.setCursor(10, 0);
-			lcd.write("Done>A");
+			lcd.write("Dining:"); lcd.print(currentTemperaturesDining); lcd.write(223);;
 			lcd.setCursor(0, 1);
 			lcd.write("Kids:  "); lcd.print(currentTemperaturesKids); lcd.write(223);
 			lcd.setCursor(11, 1);
-			lcd.write("Set>B");
+			lcd.write("Set>A");
 		break;
 #pragma endregion
 
 #pragma region Windows Menus
-		//Window menu if Auto Mode is on
+		//Window control menu if Auto Mode is on
 		case 9:
 			lcd.setCursor(0, 0);
 			lcd.write("Auto Mode is on!");
 			lcd.setCursor(0, 1);
 			lcd.write("A<T.Off");
-			lcd.setCursor(10, 1);
-			lcd.write("Back>B");
 		break;
 		
-		//Window control menu
-		//ns1 = window is open, ns2 = window is closed
+		//Window control menu if Auto Mode is Off
 		case 10:
 			lcd.setCursor(0, 0);
-			lcd.write("<>Window Cont.<>");
+			if (WindowIsOpen)
+			{
+				lcd.write("A<Close window");
+			}
+			else if (!WindowIsOpen)
+			{
+				lcd.write("A<Open window");
+			}
 			lcd.setCursor(0, 1);
-			if (ns == 1)
-			{
-				lcd.write("A<Close");
-			}
-			else if (ns == 2)
-			{
-				lcd.write("A<Open");
-			}
+			lcd.write("B<T.Auto");
 			lcd.setCursor(10, 1);
-			lcd.write("Back>B");
+			lcd.write("Humi>C");
+		break;
+		
+		//Current humidity windows control menu
+		case 11:
+			lcd.setCursor(0, 0);
+			lcd.write("Humidity:"); lcd.print(currentHumidity); lcd.write("%");
+			lcd.setCursor(0, 1);
+			lcd.write("A<Set Allowed");
+		break;
+		
+		//Set allowed humidity
+		case 12:
+			lcd.setCursor(0, 0);
+			lcd.write("Al.Humidity:"); lcd.print(currentSetHumidity); lcd.write("%");
+			lcd.setCursor(0, 1);
+			lcd.write("A<Dec.");
+			lcd.setCursor(10, 1);
+			lcd.write("Inc.>B");
 		break;
 #pragma endregion
 

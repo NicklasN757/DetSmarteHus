@@ -25,11 +25,21 @@ int previousMenuStage;
 #pragma endregion
 
 #pragma region TemperatureControlSettings
+	//Set temperatures for the dining room
 	int currentSetTemperatureDining = 22;
+	//Set temperatures for the kids room
 	int currentSetTemperatureKids = 20;
+	//Current temperatures
 	int currentTemperaturesDining;
 	int currentTemperaturesKids;
+	//Hysteresis
 	int hysteresis = 4;
+	//Current humidity
+	int currentHumidity;
+	//Set humidity
+	int currentSetHumidity = 50;
+	//Humidity hysteresis
+	int humidityhysteresis = 8;
 #pragma endregion
 
 #pragma region WindowControlSettings
@@ -78,11 +88,11 @@ DHT dht(DHTPIN, DHTTYPE);
 void setup() 
 {
 	lcd.begin(16, 2);
-	
+	dht.begin();
 }
 
 void loop() 
 {
-	lcdMenuLoader(8, NULL);
-	GetCurrentTemperature();
+	lcdMenuLoader(11, NULL);
+	GetCurrentTemperatureAndHumidity();
 }
