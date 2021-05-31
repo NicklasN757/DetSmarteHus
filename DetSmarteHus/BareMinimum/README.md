@@ -1,4 +1,10 @@
 # Det Intelligente Hus
+## Beskrivelses
+En bruger skal have mordernisert deres hus. 
+Så brugeren kan styre en stor del af deres enheder fra en central infoskærm.
+
+Dette project er en del af den afslutne prøve til "**EMBEDDED CONTROLLER**" niveau 1 og 2
+
 ## Krav
 #### Componenter
 
@@ -10,6 +16,8 @@
 - DC Motor
 - DHT11
 - Servo Motor
+- Thermistor
+- Ledninger og modstande
 
 #### Funtioner Main
 
@@ -19,7 +27,30 @@
 4. Der skal en loftventilator op i stuen som styre sig selv efter temperaturen.
 5. Alle vindueren i børne værelserne skal ufskiftes med nye smart windows. Så de selv kan åbne hvis nødvendigt.
 
-#### Funtione Optional
+#### Funtioner Optional
 
 1. Hoveddøren skal kunne låses ved hjælp af et keycard.
 2. Lyset i sturen og børneværelserne skal kunne styres fra infoskærmen.
+
+## Tekniske detaljer
+
+Projectet er lavet som "**Folder By Feature**"
+
+#### Programmer
+
+- Microchip Studio
+- Arduino IDE
+- (diagrams.net)
+
+#### Libraries
+
+- Arduino.h
+- Servo.h
+- LiquidCrystal.h
+- Keypad.h
+- Adafruit_Sensor.h
+- DHT.h
+
+## Ansvarlige
+
+- Udvikler og Ejer: Nicklas Markvart Nielsen

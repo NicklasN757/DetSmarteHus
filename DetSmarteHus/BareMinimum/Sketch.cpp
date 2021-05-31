@@ -13,9 +13,9 @@ int motorPotentiometerPin = A10;
 
 int potentiometerValue;
 int currentMenuStage;
-int previousMenuStage;
+int previousMenuStage = 0;
 
-
+char pressedKey;
 
 #pragma region FanControlSettings
 	//Speed in %
@@ -93,6 +93,8 @@ void setup()
 
 void loop() 
 {
-	lcdMenuLoader(11, NULL);
 	GetCurrentTemperatureAndHumidity();
+	pressedKey = kpd.getKey();
+	menuController(pressedKey);
+	pressedKey = NULL;
 }

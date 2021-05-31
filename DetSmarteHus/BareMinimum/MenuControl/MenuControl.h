@@ -4,8 +4,6 @@
  * Created: 28-05-2021 09:05:42
  *  Author: nick4978
  */ 
-
-
 #ifndef MENUCONTROL_H_
 #define MENUCONTROL_H_
 
@@ -14,8 +12,16 @@
 
 extern LiquidCrystal lcd;
 
+//Menu Stages variables
+extern int currentMenuStage;
+extern int previousMenuStage;
+
+//Keypad pressed key variable
+extern char pressedKey;
+
 //Fan variables
 extern int currentFanSpeed;
+extern bool fanAutoMode;
 
 //Temperature and humidity variables
 extern int currentSetTemperatureDining;
@@ -29,6 +35,9 @@ extern int currentSetHumidity;
 extern bool WindowIsOpen;
 
 //Loads the right menu based on menuStage
-void lcdMenuLoader(int menuStage, int ns);
+void lcdMenuLoader(int menuStage, int nsv);
+
+//Sets the menu stage
+void menuController(char keyPress);
 
 #endif /* MENUCONTROL_H_ */

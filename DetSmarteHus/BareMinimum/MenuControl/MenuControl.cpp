@@ -1,6 +1,8 @@
 #include "MenuControl.h"
 
-void lcdMenuLoader(int menuStage = 0, int ns = 0)
+int ns = NULL;
+
+void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 {
 	switch (menuStage)
 	{
@@ -14,8 +16,7 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 			lcd.write("Lights>B");
 		break;
 		
-#pragma region Heat Menus
-		//Heat menu
+		//Heat main menu
 		case 1:
 			lcd.setCursor(0, 0);
 			lcd.write("A<Fan");
@@ -82,11 +83,11 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 		case 7:
 			lcd.setCursor(0, 0);
 			lcd.write("Set temp:"); 
-			if (ns == 1)
+			if (nsv == 1)
 			{
 				lcd.print(currentSetTemperatureDining); 
 			}
-			else if (ns == 2)
+			else if (nsv == 2)
 			{
 				lcd.print(currentSetTemperatureKids);
 			}
@@ -104,11 +105,9 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 		//Current temperatures menu
 		case 8:
 			lcd.setCursor(0, 0);
-			lcd.write("Dining:"); lcd.print(currentTemperaturesDining); lcd.write(223);;
+			lcd.write("Dining: "); lcd.print(currentTemperaturesDining); lcd.write(223);;
 			lcd.setCursor(0, 1);
-			lcd.write("Kids:  "); lcd.print(currentTemperaturesKids); lcd.write(223);
-			lcd.setCursor(11, 1);
-			lcd.write("Set>A");
+			lcd.write("Kids:   "); lcd.print(currentTemperaturesKids); lcd.write(223);
 		break;
 #pragma endregion
 
@@ -157,8 +156,6 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 		break;
 #pragma endregion
 
-#pragma endregion
-		
 		//Error menu
 		default:
 			lcd.setCursor(0, 0);
@@ -167,4 +164,142 @@ void lcdMenuLoader(int menuStage = 0, int ns = 0)
 			lcd.write("Try \"Reset\"!!!");
 		break;
 	}
+}
+
+void menuController(char keyPress)
+{
+	if (keyPress)
+	{
+		//If the back to main menu button is pressed
+		if (keyPress == '#')
+		{
+			lcd.clear();
+			previousMenuStage = 0;
+			currentMenuStage = 0;
+		}
+		//If the back to last menu button is pressed
+		else if (keyPress == '*')
+		{
+			lcd.clear();
+			currentMenuStage = previousMenuStage;
+		}
+		//If anything else is pressed
+		else if (keyPress == 'A' || keyPress == 'B' || keyPress == 'C' || keyPress == 'D')
+		{
+			lcd.clear();
+			switch (currentMenuStage)
+			{
+#pragma region Main Menu
+				//Menu controls for the main menu
+				case 0:
+					if (keyPress == 'A')
+					{
+						currentMenuStage = 1;
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 0;
+					}
+				break;
+#pragma endregion
+#pragma region Heat Menu
+				//Menu controls for the heat settings
+				case 1:
+					if (keyPress == 'A')
+					{
+						if (fanAutoMode)
+						{
+							currentMenuStage = 2;
+						}
+						else
+						{
+							currentMenuStage = 3;
+						}
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 5;
+					}
+					else if (keyPress == 'C')
+					{
+						currentMenuStage = 9;
+					}
+					
+					previousMenuStage = 1;
+				break;
+#pragma endregion
+#pragma region Fan Menu(Auto Mode On)
+				//Menu controls for fan if Auto Mode is on
+				case 2:
+					if (keyPress == 'A') 
+					{
+						fanAutoMode = false;
+						currentMenuStage = 3;
+						currentFanSpeed = 0;	
+					}
+					previousMenuStage = 1;
+				break;
+#pragma endregion
+#pragma region Fan Menu(Auto Mode Off)
+				//Menu controls for fan if Auto Mode is off
+				case 3:
+					if (keyPress == 'A')
+					{
+						fanAutoMode = true;
+						currentMenuStage = 2;
+						previousMenuStage = 1;
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 4;
+						previousMenuStage = 3;
+					}
+				break;
+#pragma endregion
+#pragma region Fan Speed Menu
+				//Menu Controls for the fan speed
+				case 4:
+				
+				if (keyPress == 'A')
+				{
+					currentFanSpeed -= 5;
+					if (currentFanSpeed < 0)
+					{
+						currentFanSpeed = 0;
+					}
+				}
+				else if (keyPress == 'B')
+				{
+					currentFanSpeed += 5;
+					if (currentFanSpeed > 100)
+					{
+						currentFanSpeed = 100;
+					}
+				}
+				previousMenuStage = 3;
+				break;
+#pragma endregion
+#pragma region Temperatures Main Menu
+				//Main menu controls for temperatures settings
+				case 5:
+					if (keyPress == 'A')
+					{
+						currentMenuStage = 6;
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 8;
+					}
+					
+					previousMenuStage = 5;
+				break;
+#pragma endregion
+				default:
+					currentMenuStage = 404;
+				break;
+			}
+		}
+	}
+	
+	lcdMenuLoader(currentMenuStage, ns);	
 }
