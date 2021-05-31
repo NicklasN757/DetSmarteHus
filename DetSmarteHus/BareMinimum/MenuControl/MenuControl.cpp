@@ -78,24 +78,22 @@ void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 			lcd.write("Kids>B");
 		break;
 		
-		//Set temperatures for room Menu
-		//ns1 = Dining Room, ns2 = Kids Room
+		//Set temperatures menu for Dinning room
 		case 7:
 			lcd.setCursor(0, 0);
 			lcd.write("Set temp:"); 
-			if (nsv == 1)
-			{
-				lcd.print(currentSetTemperatureDining); 
-			}
-			else if (nsv == 2)
-			{
-				lcd.print(currentSetTemperatureKids);
-			}
-			else
-			{
-				lcd.write("??");
-			}
-			lcd.write(223);
+			lcd.print(currentSetTemperatureDining); lcd.write(223);
+			lcd.setCursor(0, 1);
+			lcd.write("A<Dec.");
+			lcd.setCursor(10, 1);
+			lcd.write("Inc.>B");
+		break;
+		
+		//Set temperatures menu for Kids room 
+		case 8:
+			lcd.setCursor(0, 0);
+			lcd.write("Set temp:");
+			lcd.print(currentSetTemperatureKids); lcd.write(223);
 			lcd.setCursor(0, 1);
 			lcd.write("A<Dec.");
 			lcd.setCursor(10, 1);
@@ -103,7 +101,7 @@ void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 		break;
 		
 		//Current temperatures menu
-		case 8:
+		case 9:
 			lcd.setCursor(0, 0);
 			lcd.write("Dining: "); lcd.print(currentTemperaturesDining); lcd.write(223);;
 			lcd.setCursor(0, 1);
@@ -113,15 +111,17 @@ void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 
 #pragma region Windows Menus
 		//Window control menu if Auto Mode is on
-		case 9:
+		case 10:
 			lcd.setCursor(0, 0);
 			lcd.write("Auto Mode is on!");
 			lcd.setCursor(0, 1);
 			lcd.write("A<T.Off");
+			lcd.setCursor(9, 1);
+			lcd.write("Humi.>B");
 		break;
 		
 		//Window control menu if Auto Mode is Off
-		case 10:
+		case 11:
 			lcd.setCursor(0, 0);
 			if (WindowIsOpen)
 			{
@@ -133,12 +133,12 @@ void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 			}
 			lcd.setCursor(0, 1);
 			lcd.write("B<T.Auto");
-			lcd.setCursor(10, 1);
-			lcd.write("Humi>C");
+			lcd.setCursor(9, 1);
+			lcd.write("Humi.>C");
 		break;
 		
 		//Current humidity windows control menu
-		case 11:
+		case 12:
 			lcd.setCursor(0, 0);
 			lcd.write("Humidity:"); lcd.print(currentHumidity); lcd.write("%");
 			lcd.setCursor(0, 1);
@@ -146,7 +146,7 @@ void lcdMenuLoader(int menuStage = 0, int nsv = 0)
 		break;
 		
 		//Set allowed humidity
-		case 12:
+		case 13:
 			lcd.setCursor(0, 0);
 			lcd.write("Al.Humidity:"); lcd.print(currentSetHumidity); lcd.write("%");
 			lcd.setCursor(0, 1);
@@ -183,7 +183,7 @@ void menuController(char keyPress)
 			lcd.clear();
 			currentMenuStage = previousMenuStage;
 		}
-		//If anything else is pressed
+		//If A, B, C or D is pressed
 		else if (keyPress == 'A' || keyPress == 'B' || keyPress == 'C' || keyPress == 'D')
 		{
 			lcd.clear();
@@ -215,17 +215,20 @@ void menuController(char keyPress)
 						{
 							currentMenuStage = 3;
 						}
+						previousMenuStage = 1;
 					}
 					else if (keyPress == 'B')
 					{
 						currentMenuStage = 5;
+						previousMenuStage = 1;
 					}
 					else if (keyPress == 'C')
 					{
-						currentMenuStage = 9;
+						currentMenuStage = 10;
+						previousMenuStage = 1;
 					}
 					
-					previousMenuStage = 1;
+					
 				break;
 #pragma endregion
 #pragma region Fan Menu(Auto Mode On)
@@ -235,9 +238,9 @@ void menuController(char keyPress)
 					{
 						fanAutoMode = false;
 						currentMenuStage = 3;
-						currentFanSpeed = 0;	
+						previousMenuStage = 1;
+						currentFanSpeed = 0;
 					}
-					previousMenuStage = 1;
 				break;
 #pragma endregion
 #pragma region Fan Menu(Auto Mode Off)
@@ -285,17 +288,135 @@ void menuController(char keyPress)
 					if (keyPress == 'A')
 					{
 						currentMenuStage = 6;
+						previousMenuStage = 5;
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 9;
+						previousMenuStage = 5;
+					}
+				break;
+#pragma endregion
+#pragma region Set Temperatures Chose Room Menu
+				//Menu controls for chose room
+				case 6:
+					if (keyPress == 'A')
+					{
+						currentMenuStage = 7;
+						previousMenuStage = 6;
 					}
 					else if (keyPress == 'B')
 					{
 						currentMenuStage = 8;
+						previousMenuStage = 6;
 					}
-					
-					previousMenuStage = 5;
+				break;
+#pragma endregion
+#pragma region Set Temperatures Menu(Dining)
+				//Menu temperatures controls for the Dining Room
+				case 7:
+					if (keyPress == 'A')
+					{
+						currentSetTemperatureDining--;
+					}
+					else if (keyPress == 'B')
+					{
+						currentSetTemperatureDining++;
+					}
+				break;
+#pragma endregion
+#pragma region Set Temperatures Menu(Kids)
+				//Menu temperatures controls for the Kids Room
+				case 8:
+					if (keyPress == 'A')
+					{
+						currentSetTemperatureKids--;
+					}
+					else if (keyPress == 'B')
+					{
+						currentSetTemperatureKids++;
+					}
+				break;
+#pragma endregion
+#pragma region Check Temperatures Menu
+				//Menu check temperatures controls
+				case 9:
+					//This menu can´t do anything special
+				break;
+#pragma endregion
+#pragma region Window Menu(Auto Mode On)
+				//Menu window controls if Auto Mode is on
+				case 10:
+					if (keyPress == 'A')
+					{
+						windowAutoMode = false;
+						currentMenuStage = 11;
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 12;
+						previousMenuStage = 10;
+					}
+				break;
+#pragma endregion
+#pragma region Window Controls Menu(Auto Mode Off)
+				//Menu window controls if Auto Mode is off
+				case 11:
+					if (keyPress == 'A')
+					{
+						if (WindowIsOpen)
+						{
+							WindowIsOpen = false;
+						}
+						else if (!WindowIsOpen)
+						{
+							WindowIsOpen = true;
+						}
+					}
+					else if (keyPress == 'B')
+					{
+						currentMenuStage = 10;
+						windowAutoMode = true;
+					}
+					else if (keyPress == 'C')
+					{
+						currentMenuStage = 12;
+						previousMenuStage = 11;
+					}
+				break;
+#pragma endregion
+#pragma region Check Humidity Menu
+				//Check humidity menu controls
+				case 12:
+					if (keyPress == 'A')
+					{
+						currentMenuStage = 13;
+						previousMenuStage = 12;
+					}
+				break;
+#pragma endregion
+#pragma region Set allowed humidity Menu
+				//Menu controls for set humidity menu
+				case 13:
+					if (keyPress == 'A')
+					{
+						currentSetHumidity -= 5;
+						if (currentSetHumidity < 0)
+						{
+							currentSetHumidity = 0;
+						}
+					}
+					else if (keyPress == 'B')
+					{
+						currentSetHumidity += 5;
+						if (currentSetHumidity > 100)
+						{
+							currentSetHumidity = 100;
+						}
+					}
 				break;
 #pragma endregion
 				default:
-					currentMenuStage = 404;
 				break;
 			}
 		}

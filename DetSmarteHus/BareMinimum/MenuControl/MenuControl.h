@@ -33,6 +33,7 @@ extern int currentSetHumidity;
 
 //Window variables
 extern bool WindowIsOpen;
+extern bool windowAutoMode;
 
 //Loads the right menu based on menuStage
 void lcdMenuLoader(int menuStage, int nsv);
