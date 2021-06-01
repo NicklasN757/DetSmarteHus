@@ -73,7 +73,7 @@ D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoC
 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
                               TemperatureControl/TemperatureControl.o (analogRead)
 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                              src/libraries/DHT_sensor_library/DHT.o (pinMode)
+                              Sketch.o (pinMode)
 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
                               src/libraries/Servo/src/avr/Servo.o (_Z3maplllll)
 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
@@ -97,7 +97,7 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
                               MenuControl/MenuControl.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                              MenuControl/MenuControl.o (__do_clear_bss)
+                              Sketch.o (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
                               Sketch.o (__do_global_ctors)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
@@ -226,16 +226,53 @@ Discarded input sections
                 0x00000000        0x1 MotorControl/MotorControl.o
  .text._Z19calculateMotorSpeedi
                 0x00000000       0x2c MotorControl/MotorControl.o
- .debug_info    0x00000000      0x25f MotorControl/MotorControl.o
- .debug_abbrev  0x00000000       0xab MotorControl/MotorControl.o
- .debug_loc     0x00000000       0x48 MotorControl/MotorControl.o
- .debug_aranges
-                0x00000000       0x20 MotorControl/MotorControl.o
- .debug_ranges  0x00000000       0x10 MotorControl/MotorControl.o
- .debug_line    0x00000000      0x121 MotorControl/MotorControl.o
- .debug_str     0x00000000      0x2a3 MotorControl/MotorControl.o
- .comment       0x00000000       0x31 MotorControl/MotorControl.o
- .debug_frame   0x00000000       0x34 MotorControl/MotorControl.o
+ .text          0x00000000        0x0 RGBControl/RGBControl.o
+ .data          0x00000000        0x0 RGBControl/RGBControl.o
+ .bss           0x00000000        0x0 RGBControl/RGBControl.o
+ .rodata._ZL2SS
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL4MOSI
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL4MISO
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3SCK
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3SDA
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3SCL
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A0
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A1
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A2
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A3
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A4
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A5
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A6
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A7
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A8
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL2A9
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A10
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A11
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A12
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A13
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A14
+                0x00000000        0x1 RGBControl/RGBControl.o
+ .rodata._ZL3A15
+                0x00000000        0x1 RGBControl/RGBControl.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
@@ -285,16 +322,6 @@ Discarded input sections
                 0x00000000        0x1 Sketch.o
  .rodata._ZL6NO_KEY
                 0x00000000        0x1 Sketch.o
- .data.motorPin
-                0x00000000        0x2 Sketch.o
- .data.motorPotentiometerPin
-                0x00000000        0x2 Sketch.o
- .bss.potentiometerValue
-                0x00000000        0x2 Sketch.o
- .data.hysteresis
-                0x00000000        0x2 Sketch.o
- .data.humidityhysteresis
-                0x00000000        0x2 Sketch.o
  .rodata._ZL2rs
                 0x00000000        0x2 Sketch.o
  .rodata._ZL2en
@@ -311,6 +338,8 @@ Discarded input sections
                 0x00000000        0x1 Sketch.o
  .rodata._ZL4Cols
                 0x00000000        0x1 Sketch.o
+ .rodata._ZL13servoMotorPin
+                0x00000000        0x2 Sketch.o
  .text          0x00000000        0x0 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o
  .data          0x00000000        0x0 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o
  .bss           0x00000000        0x0 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o
@@ -837,24 +866,10 @@ Discarded input sections
                 0x00000000        0x1 src/libraries/Servo/src/avr/Servo.o
  .rodata._ZL3A15
                 0x00000000        0x1 src/libraries/Servo/src/avr/Servo.o
- .text._ZL7initISR18timer16_Sequence_t
-                0x00000000       0xfe src/libraries/Servo/src/avr/Servo.o
  .text._ZL6finISR18timer16_Sequence_t
                 0x00000000       0x16 src/libraries/Servo/src/avr/Servo.o
- .text._ZL13isTimerActive18timer16_Sequence_t
-                0x00000000       0x6e src/libraries/Servo/src/avr/Servo.o
- .text._ZN5ServoC2Ev
-                0x00000000       0x68 src/libraries/Servo/src/avr/Servo.o
- .text._ZN5Servo6attachEi
-                0x00000000       0x36 src/libraries/Servo/src/avr/Servo.o
- .text._ZN5Servo6attachEiii
-                0x00000000      0x126 src/libraries/Servo/src/avr/Servo.o
  .text._ZN5Servo6detachEv
                 0x00000000       0x6e src/libraries/Servo/src/avr/Servo.o
- .text._ZN5Servo5writeEi
-                0x00000000      0x126 src/libraries/Servo/src/avr/Servo.o
- .text._ZN5Servo17writeMicrosecondsEi
-                0x00000000      0x16c src/libraries/Servo/src/avr/Servo.o
  .text._ZN5Servo4readEv
                 0x00000000       0xec src/libraries/Servo/src/avr/Servo.o
  .text._ZN5Servo16readMicrosecondsEv
@@ -991,13 +1006,6 @@ Discarded input sections
                 0x00000000        0x1 WindowControl/WindowControl.o
  .rodata._ZL3A15
                 0x00000000        0x1 WindowControl/WindowControl.o
- .debug_info    0x00000000      0x223 WindowControl/WindowControl.o
- .debug_abbrev  0x00000000       0x79 WindowControl/WindowControl.o
- .debug_aranges
-                0x00000000       0x18 WindowControl/WindowControl.o
- .debug_line    0x00000000       0xe3 WindowControl/WindowControl.o
- .debug_str     0x00000000      0x265 WindowControl/WindowControl.o
- .comment       0x00000000       0x31 WindowControl/WindowControl.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
@@ -1210,10 +1218,6 @@ Discarded input sections
  .bss           0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .text.analogReference
                 0x00000000        0x6 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .text.analogWrite
-                0x00000000      0x192 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .progmem.gcc_sw_table.analogWrite
-                0x00000000       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .text          0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .data          0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
  .bss           0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
@@ -1226,22 +1230,10 @@ Discarded input sections
                 0x00000000       0x34 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
  .text._Z6randomll
                 0x00000000       0x44 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .text._Z3maplllll
-                0x00000000       0x82 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
  .text._Z8makeWordj
                 0x00000000        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
  .text._Z8makeWordhh
                 0x00000000        0xa D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_info    0x00000000      0x230 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_abbrev  0x00000000      0x12b D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_loc     0x00000000      0x3d6 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_aranges
-                0x00000000       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_ranges  0x00000000       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_line    0x00000000      0x143 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_str     0x00000000      0x245 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .comment       0x00000000       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
- .debug_frame   0x00000000       0xf4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
  .group         0x00000000        0x8 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .text          0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .data          0x00000000        0x0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
@@ -1261,8 +1253,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
- .text.libgcc.mul
-                0x00000000       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
  .text.libgcc.div
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
@@ -1293,8 +1283,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
- .text.libgcc.div
-                0x00000000       0x2e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
@@ -1309,8 +1297,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
  .text.libgcc.mul
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
- .text.libgcc.div
-                0x00000000       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
  .text.libgcc.prologue
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
@@ -1402,8 +1388,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
- .text.libgcc.mul
-                0x00000000       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
  .text.libgcc.div
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
@@ -1418,8 +1402,6 @@ Discarded input sections
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
- .text.libgcc.mul
-                0x00000000       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc.div
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
  .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
@@ -1495,6 +1477,7 @@ Address of section .data set to 0x800200
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
 LOAD MenuControl/MenuControl.o
 LOAD MotorControl/MotorControl.o
+LOAD RGBControl/RGBControl.o
 LOAD Sketch.o
 LOAD src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o
 LOAD src/libraries/DHT_sensor_library/DHT.o
@@ -1623,479 +1606,537 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x41ee
+.text           0x00000000     0x4e30
  *(.vectors)
  .vectors       0x00000000       0xe4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
- .progmem.gcc_sw_table._Z13lcdMenuLoaderii
+ .progmem.gcc_sw_table._Z13lcdMenuLoaderi
                 0x000000e4       0x1c MenuControl/MenuControl.o
  .progmem.gcc_sw_table._Z14menuControllerc
                 0x00000100       0x1c MenuControl/MenuControl.o
  .progmem.gcc_fplib
                 0x0000011c       0x5a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(log.o)
+ .progmem.gcc_sw_table.analogWrite
+                0x00000176       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .progmem.gcc_sw_table.turnOffPWM
-                0x00000176       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000019a                . = ALIGN (0x2)
-                0x0000019a                __trampolines_start = .
+                0x0000019a       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000001be                . = ALIGN (0x2)
+                0x000001be                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x0000019a        0x0 linker stubs
+ .trampolines   0x000001be        0x0 linker stubs
  *(.trampolines*)
-                0x0000019a                __trampolines_end = .
+                0x000001be                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
  .progmem.data.digital_pin_to_timer_PGM
-                0x0000019a       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000019a                digital_pin_to_timer_PGM
+                0x000001be       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000001be                digital_pin_to_timer_PGM
  .progmem.data.digital_pin_to_bit_mask_PGM
-                0x000001e0       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000001e0                digital_pin_to_bit_mask_PGM
+                0x00000204       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000204                digital_pin_to_bit_mask_PGM
  .progmem.data.digital_pin_to_port_PGM
-                0x00000226       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000226                digital_pin_to_port_PGM
+                0x0000024a       0x46 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000024a                digital_pin_to_port_PGM
  .progmem.data.port_to_input_PGM
-                0x0000026c       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000026c                port_to_input_PGM
+                0x00000290       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000290                port_to_input_PGM
  .progmem.data.port_to_output_PGM
-                0x00000286       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000286                port_to_output_PGM
+                0x000002aa       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000002aa                port_to_output_PGM
  .progmem.data.port_to_mode_PGM
-                0x000002a0       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000002a0                port_to_mode_PGM
-                0x000002ba                . = ALIGN (0x2)
+                0x000002c4       0x1a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000002c4                port_to_mode_PGM
+                0x000002de                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x000002ba                __ctors_start = .
+                0x000002de                __ctors_start = .
  *(.ctors)
- .ctors         0x000002ba        0x2 Sketch.o
- .ctors         0x000002bc        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000002be                __ctors_end = .
-                0x000002be                __dtors_start = .
+ .ctors         0x000002de        0x2 Sketch.o
+ .ctors         0x000002e0        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000002e2                __ctors_end = .
+                0x000002e2                __dtors_start = .
  *(.dtors)
-                0x000002be                __dtors_end = .
+                0x000002e2                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000002be        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x000002be                __init
+ .init0         0x000002e2        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x000002e2                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000002be       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init2         0x000002e2       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000002ce       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
-                0x000002ce                __do_copy_data
- .init4         0x000002e8       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                0x000002e8                __do_clear_bss
+ .init4         0x000002f2       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
+                0x000002f2                __do_copy_data
+ .init4         0x0000030c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000030c                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x000002f8       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
-                0x000002f8                __do_global_ctors
+ .init6         0x0000031c       0x20 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
+                0x0000031c                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000318        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init9         0x0000033c        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init9)
  *(.text)
- .text          0x00000320        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x00000320                __vector_38
-                0x00000320                __vector_22
-                0x00000320                __vector_28
-                0x00000320                __vector_1
-                0x00000320                __vector_34
-                0x00000320                __vector_24
-                0x00000320                __vector_12
-                0x00000320                __vector_55
-                0x00000320                __vector_46
-                0x00000320                __bad_interrupt
-                0x00000320                __vector_6
-                0x00000320                __vector_31
-                0x00000320                __vector_35
-                0x00000320                __vector_39
-                0x00000320                __vector_3
-                0x00000320                __vector_30
-                0x00000320                __vector_45
-                0x00000320                __vector_11
-                0x00000320                __vector_54
-                0x00000320                __vector_13
-                0x00000320                __vector_19
-                0x00000320                __vector_56
-                0x00000320                __vector_7
-                0x00000320                __vector_49
-                0x00000320                __vector_41
-                0x00000320                __vector_43
-                0x00000320                __vector_27
-                0x00000320                __vector_5
-                0x00000320                __vector_33
-                0x00000320                __vector_52
-                0x00000320                __vector_37
-                0x00000320                __vector_4
-                0x00000320                __vector_44
-                0x00000320                __vector_51
-                0x00000320                __vector_9
-                0x00000320                __vector_2
-                0x00000320                __vector_21
-                0x00000320                __vector_15
-                0x00000320                __vector_36
-                0x00000320                __vector_29
-                0x00000320                __vector_40
-                0x00000320                __vector_8
-                0x00000320                __vector_48
-                0x00000320                __vector_14
-                0x00000320                __vector_53
-                0x00000320                __vector_10
-                0x00000320                __vector_50
-                0x00000320                __vector_16
-                0x00000320                __vector_18
-                0x00000320                __vector_20
-                0x00000322                . = ALIGN (0x2)
+ .text          0x00000344        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x00000344                __vector_38
+                0x00000344                __vector_22
+                0x00000344                __vector_28
+                0x00000344                __vector_1
+                0x00000344                __vector_34
+                0x00000344                __vector_24
+                0x00000344                __vector_12
+                0x00000344                __vector_55
+                0x00000344                __vector_46
+                0x00000344                __bad_interrupt
+                0x00000344                __vector_6
+                0x00000344                __vector_31
+                0x00000344                __vector_35
+                0x00000344                __vector_39
+                0x00000344                __vector_3
+                0x00000344                __vector_30
+                0x00000344                __vector_45
+                0x00000344                __vector_11
+                0x00000344                __vector_54
+                0x00000344                __vector_13
+                0x00000344                __vector_19
+                0x00000344                __vector_56
+                0x00000344                __vector_7
+                0x00000344                __vector_49
+                0x00000344                __vector_41
+                0x00000344                __vector_43
+                0x00000344                __vector_27
+                0x00000344                __vector_5
+                0x00000344                __vector_33
+                0x00000344                __vector_52
+                0x00000344                __vector_37
+                0x00000344                __vector_4
+                0x00000344                __vector_44
+                0x00000344                __vector_51
+                0x00000344                __vector_9
+                0x00000344                __vector_2
+                0x00000344                __vector_21
+                0x00000344                __vector_15
+                0x00000344                __vector_36
+                0x00000344                __vector_29
+                0x00000344                __vector_40
+                0x00000344                __vector_8
+                0x00000344                __vector_48
+                0x00000344                __vector_14
+                0x00000344                __vector_53
+                0x00000344                __vector_10
+                0x00000344                __vector_50
+                0x00000344                __vector_16
+                0x00000344                __vector_18
+                0x00000344                __vector_20
+                0x00000346                . = ALIGN (0x2)
  *(.text.*)
  .text._ZN5Print5writeEPKc
-                0x00000322       0x62 MenuControl/MenuControl.o
-                0x00000322                _ZN5Print5writeEPKc
- .text._Z13lcdMenuLoaderii
-                0x00000384      0x4f6 MenuControl/MenuControl.o
-                0x00000384                _Z13lcdMenuLoaderii
+                0x00000346       0x62 MenuControl/MenuControl.o
+                0x00000346                _ZN5Print5writeEPKc
+ .text._Z13lcdMenuLoaderi
+                0x000003a8      0x4ee MenuControl/MenuControl.o
+                0x000003a8                _Z13lcdMenuLoaderi
  .text._Z14menuControllerc
-                0x0000087a      0x492 MenuControl/MenuControl.o
-                0x0000087a                _Z14menuControllerc
- .text.setup    0x00000d0c       0x26 Sketch.o
-                0x00000d0c                setup
- .text.loop     0x00000d32       0x28 Sketch.o
-                0x00000d32                loop
+                0x00000896      0x4a0 MenuControl/MenuControl.o
+                0x00000896                _Z14menuControllerc
+ .text._Z30calculateMotorSpeedFromProcenti
+                0x00000d36       0x22 MotorControl/MotorControl.o
+                0x00000d36                _Z30calculateMotorSpeedFromProcenti
+ .text._Z13setMotorSpeedv
+                0x00000d58      0x16c MotorControl/MotorControl.o
+                0x00000d58                _Z13setMotorSpeedv
+ .text._Z8RGBColoriii
+                0x00000ec4       0x6e RGBControl/RGBControl.o
+                0x00000ec4                _Z8RGBColoriii
+ .text._Z13RGBControllerv
+                0x00000f32      0x140 RGBControl/RGBControl.o
+                0x00000f32                _Z13RGBControllerv
+ .text.setup    0x00001072       0x4a Sketch.o
+                0x00001072                setup
+ .text.loop     0x000010bc       0x30 Sketch.o
+                0x000010bc                loop
  .text._Z41__static_initialization_and_destruction_0ii
-                0x00000d5a       0x86 Sketch.o
- .text._GLOBAL__sub_I_motorPin
-                0x00000de0       0x18 Sketch.o
+                0x000010ec       0x8e Sketch.o
+ .text._GLOBAL__sub_I_currentMenuStage
+                0x0000117a       0x18 Sketch.o
  .text._ZN13InterruptLockC2Ev
-                0x00000df8       0x1e src/libraries/DHT_sensor_library/DHT.o
-                0x00000df8                _ZN13InterruptLockC1Ev
-                0x00000df8                _ZN13InterruptLockC2Ev
+                0x00001192       0x1e src/libraries/DHT_sensor_library/DHT.o
+                0x00001192                _ZN13InterruptLockC1Ev
+                0x00001192                _ZN13InterruptLockC2Ev
  .text._ZN13InterruptLockD2Ev
-                0x00000e16       0x1e src/libraries/DHT_sensor_library/DHT.o
-                0x00000e16                _ZN13InterruptLockD2Ev
-                0x00000e16                _ZN13InterruptLockD1Ev
+                0x000011b0       0x1e src/libraries/DHT_sensor_library/DHT.o
+                0x000011b0                _ZN13InterruptLockD2Ev
+                0x000011b0                _ZN13InterruptLockD1Ev
  .text._ZN3DHTC2Ehhh
-                0x00000e34       0xa0 src/libraries/DHT_sensor_library/DHT.o
-                0x00000e34                _ZN3DHTC1Ehhh
-                0x00000e34                _ZN3DHTC2Ehhh
+                0x000011ce       0xa0 src/libraries/DHT_sensor_library/DHT.o
+                0x000011ce                _ZN3DHTC1Ehhh
+                0x000011ce                _ZN3DHTC2Ehhh
  .text._ZN3DHT5beginEh
-                0x00000ed4       0x54 src/libraries/DHT_sensor_library/DHT.o
-                0x00000ed4                _ZN3DHT5beginEh
+                0x0000126e       0x54 src/libraries/DHT_sensor_library/DHT.o
+                0x0000126e                _ZN3DHT5beginEh
  .text._ZN3DHT15readTemperatureEbb
-                0x00000f28      0x2c0 src/libraries/DHT_sensor_library/DHT.o
-                0x00000f28                _ZN3DHT15readTemperatureEbb
+                0x000012c2      0x2c0 src/libraries/DHT_sensor_library/DHT.o
+                0x000012c2                _ZN3DHT15readTemperatureEbb
  .text._ZN3DHT11convertCtoFEf
-                0x000011e8       0x5a src/libraries/DHT_sensor_library/DHT.o
-                0x000011e8                _ZN3DHT11convertCtoFEf
+                0x00001582       0x5a src/libraries/DHT_sensor_library/DHT.o
+                0x00001582                _ZN3DHT11convertCtoFEf
  .text._ZN3DHT12readHumidityEb
-                0x00001242      0x154 src/libraries/DHT_sensor_library/DHT.o
-                0x00001242                _ZN3DHT12readHumidityEb
+                0x000015dc      0x154 src/libraries/DHT_sensor_library/DHT.o
+                0x000015dc                _ZN3DHT12readHumidityEb
  .text._ZN3DHT4readEb
-                0x00001396      0x588 src/libraries/DHT_sensor_library/DHT.o
-                0x00001396                _ZN3DHT4readEb
+                0x00001730      0x588 src/libraries/DHT_sensor_library/DHT.o
+                0x00001730                _ZN3DHT4readEb
  .text._ZN3DHT11expectPulseEb
-                0x0000191e       0xdc src/libraries/DHT_sensor_library/DHT.o
-                0x0000191e                _ZN3DHT11expectPulseEb
+                0x00001cb8       0xdc src/libraries/DHT_sensor_library/DHT.o
+                0x00001cb8                _ZN3DHT11expectPulseEb
  .text._ZN3KeyC2Ev
-                0x000019fa       0x34 src/libraries/Keypad/src/Key.o
-                0x000019fa                _ZN3KeyC2Ev
-                0x000019fa                _ZN3KeyC1Ev
+                0x00001d94       0x34 src/libraries/Keypad/src/Key.o
+                0x00001d94                _ZN3KeyC2Ev
+                0x00001d94                _ZN3KeyC1Ev
  .text._ZN6Keypad8pin_modeEhh
-                0x00001a2e       0x2c src/libraries/Keypad/src/Keypad.o
-                0x00001a2e                _ZN6Keypad8pin_modeEhh
+                0x00001dc8       0x2c src/libraries/Keypad/src/Keypad.o
+                0x00001dc8                _ZN6Keypad8pin_modeEhh
  .text._ZN6Keypad9pin_writeEhb
-                0x00001a5a       0x2e src/libraries/Keypad/src/Keypad.o
-                0x00001a5a                _ZN6Keypad9pin_writeEhb
+                0x00001df4       0x2e src/libraries/Keypad/src/Keypad.o
+                0x00001df4                _ZN6Keypad9pin_writeEhb
  .text._ZN6Keypad8pin_readEh
-                0x00001a88       0x22 src/libraries/Keypad/src/Keypad.o
-                0x00001a88                _ZN6Keypad8pin_readEh
+                0x00001e22       0x22 src/libraries/Keypad/src/Keypad.o
+                0x00001e22                _ZN6Keypad8pin_readEh
  .text._ZN6KeypadC2EPcPhS1_hh
-                0x00001aaa      0x112 src/libraries/Keypad/src/Keypad.o
-                0x00001aaa                _ZN6KeypadC2EPcPhS1_hh
-                0x00001aaa                _ZN6KeypadC1EPcPhS1_hh
+                0x00001e44      0x112 src/libraries/Keypad/src/Keypad.o
+                0x00001e44                _ZN6KeypadC2EPcPhS1_hh
+                0x00001e44                _ZN6KeypadC1EPcPhS1_hh
  .text._ZN6Keypad5beginEPc
-                0x00001bbc       0x36 src/libraries/Keypad/src/Keypad.o
-                0x00001bbc                _ZN6Keypad5beginEPc
+                0x00001f56       0x36 src/libraries/Keypad/src/Keypad.o
+                0x00001f56                _ZN6Keypad5beginEPc
  .text._ZN6Keypad6getKeyEv
-                0x00001bf2       0x6c src/libraries/Keypad/src/Keypad.o
-                0x00001bf2                _ZN6Keypad6getKeyEv
+                0x00001f8c       0x6c src/libraries/Keypad/src/Keypad.o
+                0x00001f8c                _ZN6Keypad6getKeyEv
  .text._ZN6Keypad7getKeysEv
-                0x00001c5e       0x8e src/libraries/Keypad/src/Keypad.o
-                0x00001c5e                _ZN6Keypad7getKeysEv
+                0x00001ff8       0x8e src/libraries/Keypad/src/Keypad.o
+                0x00001ff8                _ZN6Keypad7getKeysEv
  .text._ZN6Keypad8scanKeysEv
-                0x00001cec      0x286 src/libraries/Keypad/src/Keypad.o
-                0x00001cec                _ZN6Keypad8scanKeysEv
+                0x00002086      0x286 src/libraries/Keypad/src/Keypad.o
+                0x00002086                _ZN6Keypad8scanKeysEv
  .text._ZN6Keypad10updateListEv
-                0x00001f72      0x2e0 src/libraries/Keypad/src/Keypad.o
-                0x00001f72                _ZN6Keypad10updateListEv
+                0x0000230c      0x2e0 src/libraries/Keypad/src/Keypad.o
+                0x0000230c                _ZN6Keypad10updateListEv
  .text._ZN6Keypad12nextKeyStateEhb
-                0x00002252      0x152 src/libraries/Keypad/src/Keypad.o
-                0x00002252                _ZN6Keypad12nextKeyStateEhb
+                0x000025ec      0x152 src/libraries/Keypad/src/Keypad.o
+                0x000025ec                _ZN6Keypad12nextKeyStateEhb
  .text._ZN6Keypad10findInListEi
-                0x000023a4       0x70 src/libraries/Keypad/src/Keypad.o
-                0x000023a4                _ZN6Keypad10findInListEi
+                0x0000273e       0x70 src/libraries/Keypad/src/Keypad.o
+                0x0000273e                _ZN6Keypad10findInListEi
  .text._ZN6Keypad15setDebounceTimeEj
-                0x00002414       0x52 src/libraries/Keypad/src/Keypad.o
-                0x00002414                _ZN6Keypad15setDebounceTimeEj
+                0x000027ae       0x52 src/libraries/Keypad/src/Keypad.o
+                0x000027ae                _ZN6Keypad15setDebounceTimeEj
  .text._ZN6Keypad11setHoldTimeEj
-                0x00002466       0x36 src/libraries/Keypad/src/Keypad.o
-                0x00002466                _ZN6Keypad11setHoldTimeEj
+                0x00002800       0x36 src/libraries/Keypad/src/Keypad.o
+                0x00002800                _ZN6Keypad11setHoldTimeEj
  .text._ZN6Keypad12transitionToEh8KeyState
-                0x0000249c       0xf6 src/libraries/Keypad/src/Keypad.o
-                0x0000249c                _ZN6Keypad12transitionToEh8KeyState
+                0x00002836       0xf6 src/libraries/Keypad/src/Keypad.o
+                0x00002836                _ZN6Keypad12transitionToEh8KeyState
  .text._ZN5PrintC2Ev
-                0x00002592       0x34 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002592                _ZN5PrintC2Ev
-                0x00002592                _ZN5PrintC1Ev
+                0x0000292c       0x34 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x0000292c                _ZN5PrintC2Ev
+                0x0000292c                _ZN5PrintC1Ev
  .text._ZN5Print17availableForWriteEv
-                0x000025c6       0x1e src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x000025c6                _ZN5Print17availableForWriteEv
+                0x00002960       0x1e src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002960                _ZN5Print17availableForWriteEv
  .text._ZN5Print5flushEv
-                0x000025e4       0x1c src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x000025e4                _ZN5Print5flushEv
+                0x0000297e       0x1c src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x0000297e                _ZN5Print5flushEv
  .text._ZN13LiquidCrystalC2Ehhhhhh
-                0x00002600       0x86 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002600                _ZN13LiquidCrystalC1Ehhhhhh
-                0x00002600                _ZN13LiquidCrystalC2Ehhhhhh
+                0x0000299a       0x86 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x0000299a                _ZN13LiquidCrystalC1Ehhhhhh
+                0x0000299a                _ZN13LiquidCrystalC2Ehhhhhh
  .text._ZN13LiquidCrystal4initEhhhhhhhhhhhh
-                0x00002686       0xe4 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002686                _ZN13LiquidCrystal4initEhhhhhhhhhhhh
+                0x00002a20       0xe4 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002a20                _ZN13LiquidCrystal4initEhhhhhhhhhhhh
  .text._ZN13LiquidCrystal5beginEhhh
-                0x0000276a      0x246 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x0000276a                _ZN13LiquidCrystal5beginEhhh
+                0x00002b04      0x246 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002b04                _ZN13LiquidCrystal5beginEhhh
  .text._ZN13LiquidCrystal13setRowOffsetsEiiii
-                0x000029b0       0x6c src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x000029b0                _ZN13LiquidCrystal13setRowOffsetsEiiii
+                0x00002d4a       0x6c src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002d4a                _ZN13LiquidCrystal13setRowOffsetsEiiii
  .text._ZN13LiquidCrystal5clearEv
-                0x00002a1c       0x2c src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002a1c                _ZN13LiquidCrystal5clearEv
+                0x00002db6       0x2c src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002db6                _ZN13LiquidCrystal5clearEv
  .text._ZN13LiquidCrystal9setCursorEhh
-                0x00002a48       0x78 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002a48                _ZN13LiquidCrystal9setCursorEhh
+                0x00002de2       0x78 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002de2                _ZN13LiquidCrystal9setCursorEhh
  .text._ZN13LiquidCrystal7displayEv
-                0x00002ac0       0x44 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002ac0                _ZN13LiquidCrystal7displayEv
+                0x00002e5a       0x44 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002e5a                _ZN13LiquidCrystal7displayEv
  .text._ZN13LiquidCrystal7commandEh
-                0x00002b04       0x28 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002b04                _ZN13LiquidCrystal7commandEh
+                0x00002e9e       0x28 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002e9e                _ZN13LiquidCrystal7commandEh
  .text._ZN13LiquidCrystal5writeEh
-                0x00002b2c       0x2a src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002b2c                _ZN13LiquidCrystal5writeEh
+                0x00002ec6       0x2a src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002ec6                _ZN13LiquidCrystal5writeEh
  .text._ZN13LiquidCrystal4sendEhh
-                0x00002b56       0x92 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002b56                _ZN13LiquidCrystal4sendEhh
+                0x00002ef0       0x92 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002ef0                _ZN13LiquidCrystal4sendEhh
  .text._ZN13LiquidCrystal11pulseEnableEv
-                0x00002be8       0x5e src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002be8                _ZN13LiquidCrystal11pulseEnableEv
+                0x00002f82       0x5e src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002f82                _ZN13LiquidCrystal11pulseEnableEv
  .text._ZN13LiquidCrystal10write4bitsEh
-                0x00002c46       0x72 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002c46                _ZN13LiquidCrystal10write4bitsEh
+                0x00002fe0       0x72 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00002fe0                _ZN13LiquidCrystal10write4bitsEh
  .text._ZN13LiquidCrystal10write8bitsEh
-                0x00002cb8       0x72 src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x00002cb8                _ZN13LiquidCrystal10write8bitsEh
+                0x00003052       0x72 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00003052                _ZN13LiquidCrystal10write8bitsEh
  .text._ZL17handle_interrupts18timer16_Sequence_tPVjS1_
-                0x00002d2a      0x2fa src/libraries/Servo/src/avr/Servo.o
+                0x000030c4      0x2fc src/libraries/Servo/src/avr/Servo.o
  .text.__vector_17
-                0x00003024       0x6e src/libraries/Servo/src/avr/Servo.o
-                0x00003024                __vector_17
+                0x000033c0       0x6e src/libraries/Servo/src/avr/Servo.o
+                0x000033c0                __vector_17
  .text.__vector_32
-                0x00003092       0x6e src/libraries/Servo/src/avr/Servo.o
-                0x00003092                __vector_32
+                0x0000342e       0x6e src/libraries/Servo/src/avr/Servo.o
+                0x0000342e                __vector_32
  .text.__vector_42
-                0x00003100       0x6e src/libraries/Servo/src/avr/Servo.o
-                0x00003100                __vector_42
+                0x0000349c       0x6e src/libraries/Servo/src/avr/Servo.o
+                0x0000349c                __vector_42
  .text.__vector_47
-                0x0000316e       0x6e src/libraries/Servo/src/avr/Servo.o
-                0x0000316e                __vector_47
+                0x0000350a       0x6e src/libraries/Servo/src/avr/Servo.o
+                0x0000350a                __vector_47
+ .text._ZL7initISR18timer16_Sequence_t
+                0x00003578       0xfe src/libraries/Servo/src/avr/Servo.o
+ .text._ZL13isTimerActive18timer16_Sequence_t
+                0x00003676       0x6e src/libraries/Servo/src/avr/Servo.o
+ .text._ZN5ServoC2Ev
+                0x000036e4       0x68 src/libraries/Servo/src/avr/Servo.o
+                0x000036e4                _ZN5ServoC1Ev
+                0x000036e4                _ZN5ServoC2Ev
+ .text._ZN5Servo6attachEi
+                0x0000374c       0x34 src/libraries/Servo/src/avr/Servo.o
+                0x0000374c                _ZN5Servo6attachEi
+ .text._ZN5Servo6attachEiii
+                0x00003780      0x122 src/libraries/Servo/src/avr/Servo.o
+                0x00003780                _ZN5Servo6attachEiii
+ .text._ZN5Servo5writeEi
+                0x000038a2      0x124 src/libraries/Servo/src/avr/Servo.o
+                0x000038a2                _ZN5Servo5writeEi
+ .text._ZN5Servo17writeMicrosecondsEi
+                0x000039c6      0x16c src/libraries/Servo/src/avr/Servo.o
+                0x000039c6                _ZN5Servo17writeMicrosecondsEi
  .text._Z13calculateTempi
-                0x000031dc      0x12a TemperatureControl/TemperatureControl.o
-                0x000031dc                _Z13calculateTempi
+                0x00003b32      0x12a TemperatureControl/TemperatureControl.o
+                0x00003b32                _Z13calculateTempi
  .text._Z32GetCurrentTemperatureAndHumidityv
-                0x00003306       0x6e TemperatureControl/TemperatureControl.o
-                0x00003306                _Z32GetCurrentTemperatureAndHumidityv
+                0x00003c5c       0x6e TemperatureControl/TemperatureControl.o
+                0x00003c5c                _Z32GetCurrentTemperatureAndHumidityv
+ .text._Z16WindowControllerv
+                0x00003cca       0x5a WindowControl/WindowControl.o
+                0x00003cca                _Z16WindowControllerv
  .text.avr-libc.fplib
-                0x00003374        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
-                0x00003374                __subsf3
-                0x00003376                __addsf3
+                0x00003d24        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
+                0x00003d24                __subsf3
+                0x00003d26                __addsf3
  .text.avr-libc.fplib
-                0x0000337e       0xc0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3x.o)
-                0x00003398                __addsf3x
+                0x00003d2e       0xc0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3x.o)
+                0x00003d48                __addsf3x
  .text.avr-libc.fplib
-                0x0000343e        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(divsf3.o)
-                0x0000343e                __divsf3
+                0x00003dee        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(divsf3.o)
+                0x00003dee                __divsf3
  .text.avr-libc.fplib
-                0x00003442       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(divsf3x.o)
-                0x00003458                __divsf3x
-                0x0000345c                __divsf3_pse
+                0x00003df2       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(divsf3x.o)
+                0x00003e08                __divsf3x
+                0x00003e0c                __divsf3_pse
  .text.avr-libc.fplib
-                0x0000350e        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixsfsi.o)
-                0x0000350e                __fixsfsi
+                0x00003ebe        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixsfsi.o)
+                0x00003ebe                __fixsfsi
  .text.avr-libc.fplib
-                0x00003518       0x58 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o)
-                0x00003518                __fixunssfsi
+                0x00003ec8       0x58 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fixunssfsi.o)
+                0x00003ec8                __fixunssfsi
  .text.avr-libc.fplib
-                0x00003570       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(floatsisf.o)
-                0x00003570                __floatunsisf
-                0x00003574                __floatsisf
+                0x00003f20       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(floatsisf.o)
+                0x00003f20                __floatunsisf
+                0x00003f24                __floatsisf
  .text.avr-libc.fplib
-                0x000035ea        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_inf.o)
-                0x000035ea                __fp_inf
+                0x00003f9a        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_inf.o)
+                0x00003f9a                __fp_inf
  .text.avr-libc.fplib
-                0x000035f6        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_nan.o)
-                0x000035f6                __fp_nan
+                0x00003fa6        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_nan.o)
+                0x00003fa6                __fp_nan
  .text.avr-libc.fplib
-                0x000035fc        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscA.o)
-                0x000035fc                __fp_pscA
+                0x00003fac        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscA.o)
+                0x00003fac                __fp_pscA
  .text.avr-libc.fplib
-                0x0000360a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscB.o)
-                0x0000360a                __fp_pscB
+                0x00003fba        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_pscB.o)
+                0x00003fba                __fp_pscB
  .text.avr-libc.fplib
-                0x00003618       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_round.o)
-                0x00003618                __fp_round
+                0x00003fc8       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_round.o)
+                0x00003fc8                __fp_round
  .text.avr-libc.fplib
-                0x0000363a       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_split3.o)
-                0x0000363a                __fp_split3
-                0x0000364a                __fp_splitA
+                0x00003fea       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_split3.o)
+                0x00003fea                __fp_split3
+                0x00003ffa                __fp_splitA
  .text.avr-libc.fplib
-                0x0000367e        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_zero.o)
-                0x0000367e                __fp_zero
-                0x00003680                __fp_szero
+                0x0000402e        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_zero.o)
+                0x0000402e                __fp_zero
+                0x00004030                __fp_szero
  .text.avr-libc.fplib
-                0x0000368c       0x8a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(log.o)
-                0x00003696                log
+                0x0000403c       0x8a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(log.o)
+                0x00004046                log
  .text.avr-libc.fplib
-                0x00003716        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o)
-                0x00003716                __mulsf3
+                0x000040c6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3.o)
+                0x000040c6                __mulsf3
  .text.avr-libc.fplib
-                0x0000371a       0xc2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3x.o)
-                0x0000372e                __mulsf3x
-                0x00003732                __mulsf3_pse
+                0x000040ca       0xc2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(mulsf3x.o)
+                0x000040de                __mulsf3x
+                0x000040e2                __mulsf3_pse
  .text.avr-libc.fplib
-                0x000037dc       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_mpack.o)
-                0x000037dc                __fp_mpack
-                0x000037e0                __fp_mpack_finite
+                0x0000418c       0x1c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_mpack.o)
+                0x0000418c                __fp_mpack
+                0x00004190                __fp_mpack_finite
  .text.avr-libc.fplib
-                0x000037f8       0x4a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_powser.o)
-                0x000037f8                __fp_powser
+                0x000041a8       0x4a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(fp_powser.o)
+                0x000041a8                __fp_powser
  .text.__cxa_pure_virtual
-                0x00003842        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
-                0x00003842                __cxa_pure_virtual
+                0x000041f2        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+                0x000041f2                __cxa_pure_virtual
  .text.__vector_25
-                0x00003844       0x6c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00003844                __vector_25
+                0x000041f4       0x6c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000041f4                __vector_25
  .text.__vector_26
-                0x000038b0       0x52 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000038b0                __vector_26
+                0x00004260       0x52 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00004260                __vector_26
  .text._Z17Serial0_availablev
-                0x00003902       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00003902                _Z17Serial0_availablev
+                0x000042b2       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000042b2                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_25
-                0x00003914       0x5a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000042c4       0x5a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x0000396e        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x0000396e                initVariant
+                0x0000431e        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x0000431e                initVariant
  .text.startup.main
-                0x00003970       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
-                0x00003970                main
+                0x00004320       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00004320                main
  .text._ZN5Print5writeEPKhj
-                0x00003988       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003988                _ZN5Print5writeEPKhj
+                0x00004338       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00004338                _ZN5Print5writeEPKhj
  .text._ZN5Print5printEc
-                0x000039dc        0xe D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000039dc                _ZN5Print5printEc
+                0x0000438c        0xe D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000438c                _ZN5Print5printEc
  .text._ZN5Print11printNumberEmh
-                0x000039ea       0x90 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x000039ea                _ZN5Print11printNumberEmh
+                0x0000439a       0x90 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000439a                _ZN5Print11printNumberEmh
  .text._ZN5Print5printEli
-                0x00003a7a       0x8a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003a7a                _ZN5Print5printEli
+                0x0000442a       0x8a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x0000442a                _ZN5Print5printEli
  .text._ZN5Print5printEii
-                0x00003b04        0xc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00003b04                _ZN5Print5printEii
+                0x000044b4        0xc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x000044b4                _ZN5Print5printEii
  .text.__vector_23
-                0x00003b10       0x94 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003b10                __vector_23
- .text.millis   0x00003ba4       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003ba4                millis
- .text.micros   0x00003bbc       0x4a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003bbc                micros
- .text.delay    0x00003c06       0x72 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003c06                delay
+                0x000044c0       0x94 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000044c0                __vector_23
+ .text.millis   0x00004554       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00004554                millis
+ .text.micros   0x0000456c       0x4a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000456c                micros
+ .text.delay    0x000045b6       0x72 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x000045b6                delay
  .text.delayMicroseconds
-                0x00003c78       0x16 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003c78                delayMicroseconds
- .text.init     0x00003c8e       0xc4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00003c8e                init
+                0x00004628       0x16 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00004628                delayMicroseconds
+ .text.init     0x0000463e       0xc4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x0000463e                init
  .text.analogRead
-                0x00003d52       0x4a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
-                0x00003d52                analogRead
+                0x00004702       0x4a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                0x00004702                analogRead
+ .text.analogWrite
+                0x0000474c      0x18c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                0x0000474c                analogWrite
  .text.turnOffPWM
-                0x00003d9c       0xaa D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00003e46       0x78 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00003e46                pinMode
+                0x000048d8       0xaa D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00004982       0x78 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00004982                pinMode
  .text.digitalWrite
-                0x00003ebe       0x5c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00003ebe                digitalWrite
+                0x000049fa       0x5c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000049fa                digitalWrite
  .text.digitalRead
-                0x00003f1a       0x50 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00003f1a                digitalRead
+                0x00004a56       0x50 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00004a56                digitalRead
+ .text._Z3maplllll
+                0x00004aa6       0x7e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+                0x00004aa6                _Z3maplllll
  .text._ZN14HardwareSerial9availableEv
-                0x00003f6a       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003f6a                _ZN14HardwareSerial9availableEv
+                0x00004b24       0x18 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004b24                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00003f82       0x1c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003f82                _ZN14HardwareSerial4peekEv
+                0x00004b3c       0x1c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004b3c                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x00003f9e       0x28 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003f9e                _ZN14HardwareSerial4readEv
+                0x00004b58       0x28 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004b58                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00003fc6       0x1e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003fc6                _ZN14HardwareSerial17availableForWriteEv
+                0x00004b80       0x1e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004b80                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00003fe4       0x78 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00003fe4                _Z14serialEventRunv
+                0x00004b9e       0x78 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004b9e                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x0000405c       0x44 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000405c                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x00004c16       0x44 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004c16                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x000040a0       0x98 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000040a0                _ZN14HardwareSerial5writeEh
+                0x00004c5a       0x98 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004c5a                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x00004138       0x42 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00004138                _ZN14HardwareSerial5flushEv
- .text.__empty  0x0000417a        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
-                0x0000417a                yield
+                0x00004cf2       0x42 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00004cf2                _ZN14HardwareSerial5flushEv
+ .text.__empty  0x00004d34        0x2 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00004d34                yield
+ .text.libgcc.mul
+                0x00004d36       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_mulsi3.o)
+                0x00004d36                __mulsi3
  .text.libgcc.div
-                0x0000417c       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
-                0x0000417c                __udivmodsi4
- .text.libgcc   0x000041c0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
-                0x000041c0                __tablejump2__
+                0x00004d54       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
+                0x00004d54                __udivmodsi4
+ .text.libgcc.div
+                0x00004d98       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_divmodsi4.o)
+                0x00004d98                __divmodsi4
+ .text.libgcc.div
+                0x00004dc0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_negsi2.o)
+                0x00004dc0                __negsi2
+ .text.libgcc   0x00004dd0       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
+                0x00004dd0                __tablejump2__
+ .text.libgcc.mul
+                0x00004de0       0x14 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_muluhisi3.o)
+                0x00004de0                __muluhisi3
+ .text.libgcc.mul
+                0x00004df4       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_umulhisi3.o)
+                0x00004df4                __umulhisi3
  .text.avr-libc
-                0x000041d0        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(abort.o)
-                0x000041d0                abort
+                0x00004e12        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(abort.o)
+                0x00004e12                abort
  .text.avr-libc
-                0x000041d8       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strlen.o)
-                0x000041d8                strlen
-                0x000041ea                . = ALIGN (0x2)
+                0x00004e1a       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(strlen.o)
+                0x00004e1a                strlen
+                0x00004e2c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000041ea        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
-                0x000041ea                _exit
-                0x000041ea                exit
+ .fini9         0x00004e2c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+                0x00004e2c                _exit
+                0x00004e2c                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -2114,123 +2155,143 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000041ea        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x00004e2c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x000041ee                _etext = .
+                0x00004e30                _etext = .
 
-.data           0x00800200      0x1b6 load address 0x000041ee
+.data           0x00800200      0x1c0 load address 0x00004e30
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
- .data.currentFanSpeed
-                0x00800200        0x2 Sketch.o
-                0x00800200                currentFanSpeed
- .data.fanAutoMode
-                0x00800202        0x1 Sketch.o
-                0x00800202                fanAutoMode
  .data.currentSetTemperatureDining
-                0x00800203        0x2 Sketch.o
-                0x00800203                currentSetTemperatureDining
+                0x00800200        0x2 Sketch.o
+                0x00800200                currentSetTemperatureDining
  .data.currentSetTemperatureKids
-                0x00800205        0x2 Sketch.o
-                0x00800205                currentSetTemperatureKids
+                0x00800202        0x2 Sketch.o
+                0x00800202                currentSetTemperatureKids
+ .data.hysteresis
+                0x00800204        0x2 Sketch.o
+                0x00800204                hysteresis
  .data.currentSetHumidity
-                0x00800207        0x2 Sketch.o
-                0x00800207                currentSetHumidity
+                0x00800206        0x2 Sketch.o
+                0x00800206                currentSetHumidity
+ .data.humidityhysteresis
+                0x00800208        0x2 Sketch.o
+                0x00800208                humidityhysteresis
  .data.windowAutoMode
-                0x00800209        0x1 Sketch.o
-                0x00800209                windowAutoMode
- .data.Keys     0x0080020a       0x10 Sketch.o
-                0x0080020a                Keys
- .data.rowPins  0x0080021a        0x4 Sketch.o
-                0x0080021a                rowPins
- .data.colPins  0x0080021e        0x4 Sketch.o
-                0x0080021e                colPins
+                0x0080020a        0x1 Sketch.o
+                0x0080020a                windowAutoMode
+ .data.Keys     0x0080020b       0x10 Sketch.o
+                0x0080020b                Keys
+ .data.rowPins  0x0080021b        0x4 Sketch.o
+                0x0080021b                rowPins
+ .data.colPins  0x0080021f        0x4 Sketch.o
+                0x0080021f                colPins
  .data.analog_reference
-                0x00800222        0x1 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
-                0x00800222                analog_reference
+                0x00800223        0x1 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                0x00800223                analog_reference
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x00800223      0x15f MenuControl/MenuControl.o
+ .rodata        0x00800224      0x15f MenuControl/MenuControl.o
  *(.rodata*)
+ .rodata.motorPin
+                0x00800383        0x2 Sketch.o
+                0x00800383                motorPin
+ .rodata.redLEDPin
+                0x00800385        0x2 Sketch.o
+                0x00800385                redLEDPin
+ .rodata.greenLEDPin
+                0x00800387        0x2 Sketch.o
+                0x00800387                greenLEDPin
+ .rodata.blueLEDPin
+                0x00800389        0x2 Sketch.o
+                0x00800389                blueLEDPin
  .rodata._ZTV6Keypad
-                0x00800382        0xa src/libraries/Keypad/src/Keypad.o
-                0x00800382                _ZTV6Keypad
+                0x0080038b        0xa src/libraries/Keypad/src/Keypad.o
+                0x0080038b                _ZTV6Keypad
  .rodata._ZTV13LiquidCrystal
-                0x0080038c        0xc src/libraries/LiquidCrystal/src/LiquidCrystal.o
-                0x0080038c                _ZTV13LiquidCrystal
+                0x00800395        0xc src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00800395                _ZTV13LiquidCrystal
  .rodata._ZTV5Print
-                0x00800398        0xc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
-                0x00800398                _ZTV5Print
+                0x008003a1        0xc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x008003a1                _ZTV5Print
  .rodata._ZTV14HardwareSerial
-                0x008003a4       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x008003a4                _ZTV14HardwareSerial
+                0x008003ad       0x12 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x008003ad                _ZTV14HardwareSerial
  *(.gnu.linkonce.r*)
-                0x008003b6                . = ALIGN (0x2)
-                0x008003b6                _edata = .
-                0x008003b6                PROVIDE (__data_end, .)
+                0x008003c0                . = ALIGN (0x2)
+ *fill*         0x008003bf        0x1 
+                0x008003c0                _edata = .
+                0x008003c0                PROVIDE (__data_end, .)
 
-.bss            0x008003b6      0x1d8
-                0x008003b6                PROVIDE (__bss_start, .)
+.bss            0x008003c0      0x1dc
+                0x008003c0                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.ns        0x008003b6        0x2 MenuControl/MenuControl.o
-                0x008003b6                ns
  .bss.currentMenuStage
-                0x008003b8        0x2 Sketch.o
-                0x008003b8                currentMenuStage
+                0x008003c0        0x2 Sketch.o
+                0x008003c0                currentMenuStage
  .bss.previousMenuStage
-                0x008003ba        0x2 Sketch.o
-                0x008003ba                previousMenuStage
+                0x008003c2        0x2 Sketch.o
+                0x008003c2                previousMenuStage
  .bss.pressedKey
-                0x008003bc        0x1 Sketch.o
-                0x008003bc                pressedKey
+                0x008003c4        0x1 Sketch.o
+                0x008003c4                pressedKey
+ .bss.currentFanSpeed
+                0x008003c5        0x2 Sketch.o
+                0x008003c5                currentFanSpeed
+ .bss.fanAutoMode
+                0x008003c7        0x1 Sketch.o
+                0x008003c7                fanAutoMode
  .bss.currentTemperaturesDining
-                0x008003bd        0x2 Sketch.o
-                0x008003bd                currentTemperaturesDining
+                0x008003c8        0x2 Sketch.o
+                0x008003c8                currentTemperaturesDining
  .bss.currentTemperaturesKids
-                0x008003bf        0x2 Sketch.o
-                0x008003bf                currentTemperaturesKids
+                0x008003ca        0x2 Sketch.o
+                0x008003ca                currentTemperaturesKids
  .bss.currentHumidity
-                0x008003c1        0x2 Sketch.o
-                0x008003c1                currentHumidity
+                0x008003cc        0x2 Sketch.o
+                0x008003cc                currentHumidity
  .bss.WindowIsOpen
-                0x008003c3        0x1 Sketch.o
-                0x008003c3                WindowIsOpen
- .bss.lcd       0x008003c4       0x18 Sketch.o
-                0x008003c4                lcd
- .bss.kpd       0x008003dc       0x64 Sketch.o
-                0x008003dc                kpd
- .bss.dht       0x00800440       0x13 Sketch.o
-                0x00800440                dht
+                0x008003ce        0x1 Sketch.o
+                0x008003ce                WindowIsOpen
+ .bss.lcd       0x008003cf       0x18 Sketch.o
+                0x008003cf                lcd
+ .bss.kpd       0x008003e7       0x64 Sketch.o
+                0x008003e7                kpd
+ .bss.dht       0x0080044b       0x13 Sketch.o
+                0x0080044b                dht
+ .bss.servoMotor
+                0x0080045e        0x3 Sketch.o
+                0x0080045e                servoMotor
  .bss._ZL6servos
-                0x00800453       0x90 src/libraries/Servo/src/avr/Servo.o
+                0x00800461       0x90 src/libraries/Servo/src/avr/Servo.o
  .bss._ZL7Channel
-                0x008004e3        0x4 src/libraries/Servo/src/avr/Servo.o
+                0x008004f1        0x4 src/libraries/Servo/src/avr/Servo.o
  .bss.ServoCount
-                0x008004e7        0x1 src/libraries/Servo/src/avr/Servo.o
-                0x008004e7                ServoCount
- .bss.Serial    0x008004e8       0x9d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x008004e8                Serial
+                0x008004f5        0x1 src/libraries/Servo/src/avr/Servo.o
+                0x008004f5                ServoCount
+ .bss.Serial    0x008004f6       0x9d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x008004f6                Serial
  .bss.timer0_fract
-                0x00800585        0x1 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800593        0x1 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800586        0x4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x00800586                timer0_millis
+                0x00800594        0x4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800594                timer0_millis
  .bss.timer0_overflow_count
-                0x0080058a        0x4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
-                0x0080058a                timer0_overflow_count
+                0x00800598        0x4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00800598                timer0_overflow_count
  *(COMMON)
-                0x0080058e                PROVIDE (__bss_end, .)
-                0x000041ee                __data_load_start = LOADADDR (.data)
-                0x000043a4                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080059c                PROVIDE (__bss_end, .)
+                0x00004e30                __data_load_start = LOADADDR (.data)
+                0x00004ff0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080058e        0x0
+.noinit         0x0080059c        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080058e                _end = .
-                0x0080058e                PROVIDE (__heap_start, .)
+                0x0080059c                _end = .
+                0x0080059c                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -2273,6 +2334,8 @@ END GROUP
  *(.comment)
  .comment       0x00000000       0x30 MenuControl/MenuControl.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 MotorControl/MotorControl.o
+ .comment       0x00000030       0x31 RGBControl/RGBControl.o
  .comment       0x00000030       0x31 Sketch.o
  .comment       0x00000030       0x31 src/libraries/DHT_sensor_library/DHT.o
  .comment       0x00000030       0x31 src/libraries/Keypad/src/Key.o
@@ -2280,6 +2343,7 @@ END GROUP
  .comment       0x00000030       0x31 src/libraries/LiquidCrystal/src/LiquidCrystal.o
  .comment       0x00000030       0x31 src/libraries/Servo/src/avr/Servo.o
  .comment       0x00000030       0x31 TemperatureControl/TemperatureControl.o
+ .comment       0x00000030       0x31 WindowControl/WindowControl.o
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
@@ -2287,6 +2351,7 @@ END GROUP
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
  .comment       0x00000030       0x31 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
@@ -2310,183 +2375,219 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x680
+.debug_aranges  0x00000000      0x740
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x30 MenuControl/MenuControl.o
  .debug_aranges
-                0x00000030       0x38 Sketch.o
+                0x00000030       0x30 MotorControl/MotorControl.o
  .debug_aranges
-                0x00000068       0x78 src/libraries/DHT_sensor_library/DHT.o
+                0x00000060       0x28 RGBControl/RGBControl.o
  .debug_aranges
-                0x000000e0       0x30 src/libraries/Keypad/src/Key.o
+                0x00000088       0x38 Sketch.o
  .debug_aranges
-                0x00000110       0xc0 src/libraries/Keypad/src/Keypad.o
+                0x000000c0       0x78 src/libraries/DHT_sensor_library/DHT.o
  .debug_aranges
-                0x000001d0      0x118 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+                0x00000138       0x30 src/libraries/Keypad/src/Key.o
  .debug_aranges
-                0x000002e8       0xa0 src/libraries/Servo/src/avr/Servo.o
+                0x00000168       0xc0 src/libraries/Keypad/src/Keypad.o
  .debug_aranges
-                0x00000388       0x28 TemperatureControl/TemperatureControl.o
+                0x00000228      0x118 src/libraries/LiquidCrystal/src/LiquidCrystal.o
  .debug_aranges
-                0x000003b0       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+                0x00000340       0xa0 src/libraries/Servo/src/avr/Servo.o
  .debug_aranges
-                0x000003d0       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000003e0       0x28 TemperatureControl/TemperatureControl.o
  .debug_aranges
-                0x00000418       0x30 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+                0x00000408       0x20 WindowControl/WindowControl.o
  .debug_aranges
-                0x00000448      0x100 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+                0x00000428       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
  .debug_aranges
-                0x00000548       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+                0x00000448       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000590       0x30 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+                0x00000490       0x30 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x000005c0       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000004c0      0x100 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x000005f8       0x68 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000005c0       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000660       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+                0x00000608       0x30 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_aranges
+                0x00000638       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_aranges
+                0x00000670       0x48 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_aranges
+                0x000006b8       0x68 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_aranges
+                0x00000720       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xcde9
+.debug_info     0x00000000     0xdd0f
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_info    0x00000bbc      0x40e MenuControl/MenuControl.o
- .debug_info    0x00000fca      0xd87 Sketch.o
- .debug_info    0x00001d51      0x9c9 src/libraries/DHT_sensor_library/DHT.o
- .debug_info    0x0000271a      0x423 src/libraries/Keypad/src/Key.o
- .debug_info    0x00002b3d      0xe12 src/libraries/Keypad/src/Keypad.o
- .debug_info    0x0000394f     0x1286 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_info    0x00004bd5      0x85a src/libraries/Servo/src/avr/Servo.o
- .debug_info    0x0000542f      0x512 TemperatureControl/TemperatureControl.o
- .debug_info    0x00005941       0x76 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_info    0x000059b7     0x1b74 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x0000752b      0x295 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_info    0x000077c0     0x295d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x0000a11d      0x329 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x0000a446      0x2cd D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_info    0x0000a713      0x63a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x0000ad4d     0x205e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x0000cdab       0x3e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_info    0x00000bbc      0x571 MenuControl/MenuControl.o
+ .debug_info    0x0000112d      0x2fb MotorControl/MotorControl.o
+ .debug_info    0x00001428      0x2e3 RGBControl/RGBControl.o
+ .debug_info    0x0000170b      0xf31 Sketch.o
+ .debug_info    0x0000263c      0x9c9 src/libraries/DHT_sensor_library/DHT.o
+ .debug_info    0x00003005      0x423 src/libraries/Keypad/src/Key.o
+ .debug_info    0x00003428      0xe12 src/libraries/Keypad/src/Keypad.o
+ .debug_info    0x0000423a     0x1286 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_info    0x000054c0      0x85a src/libraries/Servo/src/avr/Servo.o
+ .debug_info    0x00005d1a      0x512 TemperatureControl/TemperatureControl.o
+ .debug_info    0x0000622c      0x40b WindowControl/WindowControl.o
+ .debug_info    0x00006637       0x76 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_info    0x000066ad     0x1b74 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00008221      0x295 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x000084b6     0x295d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x0000ae13      0x329 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x0000b13c      0x2cd D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_info    0x0000b409      0x63a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000ba43      0x230 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_info    0x0000bc73     0x205e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x0000dcd1       0x3e D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000     0x3060
+.debug_abbrev   0x00000000     0x34c0
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_abbrev  0x00000b1a      0x169 MenuControl/MenuControl.o
- .debug_abbrev  0x00000c83      0x2fb Sketch.o
- .debug_abbrev  0x00000f7e      0x280 src/libraries/DHT_sensor_library/DHT.o
- .debug_abbrev  0x000011fe      0x16f src/libraries/Keypad/src/Key.o
- .debug_abbrev  0x0000136d      0x303 src/libraries/Keypad/src/Keypad.o
- .debug_abbrev  0x00001670      0x2b5 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_abbrev  0x00001925      0x2d1 src/libraries/Servo/src/avr/Servo.o
- .debug_abbrev  0x00001bf6      0x18d TemperatureControl/TemperatureControl.o
- .debug_abbrev  0x00001d83       0x6d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_abbrev  0x00001df0      0x3ce D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x000021be      0x12d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x000022eb      0x47a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x00002765      0x146 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x000028ab      0x17a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_abbrev  0x00002a25      0x15a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x00002b7f      0x4b7 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x00003036       0x2a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00000b1a      0x19f MenuControl/MenuControl.o
+ .debug_abbrev  0x00000cb9       0xd5 MotorControl/MotorControl.o
+ .debug_abbrev  0x00000d8e       0xd3 RGBControl/RGBControl.o
+ .debug_abbrev  0x00000e61      0x31b Sketch.o
+ .debug_abbrev  0x0000117c      0x280 src/libraries/DHT_sensor_library/DHT.o
+ .debug_abbrev  0x000013fc      0x16f src/libraries/Keypad/src/Key.o
+ .debug_abbrev  0x0000156b      0x303 src/libraries/Keypad/src/Keypad.o
+ .debug_abbrev  0x0000186e      0x2b5 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_abbrev  0x00001b23      0x2d1 src/libraries/Servo/src/avr/Servo.o
+ .debug_abbrev  0x00001df4      0x18d TemperatureControl/TemperatureControl.o
+ .debug_abbrev  0x00001f81      0x137 WindowControl/WindowControl.o
+ .debug_abbrev  0x000020b8       0x6d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_abbrev  0x00002125      0x3ce D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x000024f3      0x12d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00002620      0x47a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00002a9a      0x146 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00002be0      0x17a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_abbrev  0x00002d5a      0x15a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00002eb4      0x12b D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_abbrev  0x00002fdf      0x4b7 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00003496       0x2a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000     0x4482
+.debug_line     0x00000000     0x4b47
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1fa C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_line    0x000001fa      0x7e4 MenuControl/MenuControl.o
- .debug_line    0x000009de      0x2c2 Sketch.o
- .debug_line    0x00000ca0      0x63c src/libraries/DHT_sensor_library/DHT.o
- .debug_line    0x000012dc      0x1be src/libraries/Keypad/src/Key.o
- .debug_line    0x0000149a      0x7c1 src/libraries/Keypad/src/Keypad.o
- .debug_line    0x00001c5b      0x851 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_line    0x000024ac      0x598 src/libraries/Servo/src/avr/Servo.o
- .debug_line    0x00002a44      0x1b0 TemperatureControl/TemperatureControl.o
- .debug_line    0x00002bf4       0xa9 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_line    0x00002c9d      0x288 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00002f25      0x161 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00003086      0x681 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x00003707      0x2cb D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x000039d2      0x2c4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_line    0x00003c96      0x284 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00003f1a      0x527 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00004441       0x41 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_line    0x000001fa      0x81a MenuControl/MenuControl.o
+ .debug_line    0x00000a14      0x1bf MotorControl/MotorControl.o
+ .debug_line    0x00000bd3      0x1af RGBControl/RGBControl.o
+ .debug_line    0x00000d82      0x31c Sketch.o
+ .debug_line    0x0000109e      0x63c src/libraries/DHT_sensor_library/DHT.o
+ .debug_line    0x000016da      0x1be src/libraries/Keypad/src/Key.o
+ .debug_line    0x00001898      0x7c1 src/libraries/Keypad/src/Keypad.o
+ .debug_line    0x00002059      0x851 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_line    0x000028aa      0x598 src/libraries/Servo/src/avr/Servo.o
+ .debug_line    0x00002e42      0x1b0 TemperatureControl/TemperatureControl.o
+ .debug_line    0x00002ff2      0x184 WindowControl/WindowControl.o
+ .debug_line    0x00003176       0xa9 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_line    0x0000321f      0x288 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x000034a7      0x161 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00003608      0x681 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x00003c89      0x2cb D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00003f54      0x2c4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_line    0x00004218      0x284 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x0000449c      0x143 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_line    0x000045df      0x527 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00004b06       0x41 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000     0x173c
+.debug_frame    0x00000000     0x192c
  *(.debug_frame)
  .debug_frame   0x00000000       0x80 MenuControl/MenuControl.o
- .debug_frame   0x00000080       0xa4 Sketch.o
- .debug_frame   0x00000124      0x224 src/libraries/DHT_sensor_library/DHT.o
- .debug_frame   0x00000348       0x74 src/libraries/Keypad/src/Key.o
- .debug_frame   0x000003bc      0x2c8 src/libraries/Keypad/src/Keypad.o
- .debug_frame   0x00000684      0x4b8 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_frame   0x00000b3c      0x3d0 src/libraries/Servo/src/avr/Servo.o
- .debug_frame   0x00000f0c       0x54 TemperatureControl/TemperatureControl.o
- .debug_frame   0x00000f60       0x34 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_frame   0x00000f94       0xe0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x00001074       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x000010c8      0x3ac D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x00001474       0xc4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x00001538       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_frame   0x0000158c       0x7c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x00001608      0x110 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x00001718       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00000080       0x74 MotorControl/MotorControl.o
+ .debug_frame   0x000000f4       0x54 RGBControl/RGBControl.o
+ .debug_frame   0x00000148       0xa4 Sketch.o
+ .debug_frame   0x000001ec      0x224 src/libraries/DHT_sensor_library/DHT.o
+ .debug_frame   0x00000410       0x74 src/libraries/Keypad/src/Key.o
+ .debug_frame   0x00000484      0x2c8 src/libraries/Keypad/src/Keypad.o
+ .debug_frame   0x0000074c      0x4b8 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_frame   0x00000c04      0x3d0 src/libraries/Servo/src/avr/Servo.o
+ .debug_frame   0x00000fd4       0x54 TemperatureControl/TemperatureControl.o
+ .debug_frame   0x00001028       0x34 WindowControl/WindowControl.o
+ .debug_frame   0x0000105c       0x34 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_frame   0x00001090       0xe0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x00001170       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x000011c4      0x3ac D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x00001570       0xc4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00001634       0x54 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_frame   0x00001688       0x7c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00001704       0xf4 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_frame   0x000017f8      0x110 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00001908       0x24 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000     0x3623
+.debug_str      0x00000000     0x3876
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_str     0x000003e6      0x39d MenuControl/MenuControl.o
-                                0x3ee (size before relaxing)
- .debug_str     0x00000783      0x69d Sketch.o
-                                0xa53 (size before relaxing)
- .debug_str     0x00000e20      0x17f src/libraries/DHT_sensor_library/DHT.o
+ .debug_str     0x000003e6      0x49f MenuControl/MenuControl.o
+                                0x50d (size before relaxing)
+ .debug_str     0x00000885       0xd6 MotorControl/MotorControl.o
+                                0x375 (size before relaxing)
+ .debug_str     0x0000095b       0x95 RGBControl/RGBControl.o
+                                0x318 (size before relaxing)
+ .debug_str     0x000009f0      0x68a Sketch.o
+                                0xb7c (size before relaxing)
+ .debug_str     0x0000107a      0x17f src/libraries/DHT_sensor_library/DHT.o
                                 0x57e (size before relaxing)
- .debug_str     0x00000f9f       0x5d src/libraries/Keypad/src/Key.o
+ .debug_str     0x000011f9       0x5d src/libraries/Keypad/src/Key.o
                                 0x344 (size before relaxing)
- .debug_str     0x00000ffc       0xb8 src/libraries/Keypad/src/Keypad.o
+ .debug_str     0x00001256       0xb8 src/libraries/Keypad/src/Keypad.o
                                 0x776 (size before relaxing)
- .debug_str     0x000010b4      0x695 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_str     0x0000130e      0x695 src/libraries/LiquidCrystal/src/LiquidCrystal.o
                                 0x92c (size before relaxing)
- .debug_str     0x00001749      0x24e src/libraries/Servo/src/avr/Servo.o
+ .debug_str     0x000019a3      0x145 src/libraries/Servo/src/avr/Servo.o
                                 0x4f2 (size before relaxing)
- .debug_str     0x00001997       0xb2 TemperatureControl/TemperatureControl.o
+ .debug_str     0x00001ae8       0xb2 TemperatureControl/TemperatureControl.o
                                 0x4ce (size before relaxing)
- .debug_str     0x00001a49      0x180 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_str     0x00001b9a       0x4a WindowControl/WindowControl.o
+                                0x404 (size before relaxing)
+ .debug_str     0x00001be4      0x180 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
                                 0x196 (size before relaxing)
- .debug_str     0x00001bc9     0x1051 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x00001d64     0x1051 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x1400 (size before relaxing)
- .debug_str     0x00002c1a       0x5a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x00002db5       0x5a D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
                                 0x2ac (size before relaxing)
- .debug_str     0x00002c74      0x3b6 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x00002e0f      0x3b6 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
                                0x123a (size before relaxing)
- .debug_str     0x0000302a      0x159 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x000031c5      0x159 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
                                 0x242 (size before relaxing)
- .debug_str     0x00003183       0x87 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_str     0x0000331e       0x87 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
                                 0x246 (size before relaxing)
- .debug_str     0x0000320a       0x58 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x000033a5       0x58 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2a7 (size before relaxing)
- .debug_str     0x00003262      0x3a5 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x000033fd       0xb8 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+                                0x245 (size before relaxing)
+ .debug_str     0x000034b5      0x3a5 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x16e5 (size before relaxing)
- .debug_str     0x00003607       0x1c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_str     0x0000385a       0x1c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
                                 0x137 (size before relaxing)
 
-.debug_loc      0x00000000     0x4dbb
+.debug_loc      0x00000000     0x531a
  *(.debug_loc)
  .debug_loc     0x00000000       0xf2 MenuControl/MenuControl.o
- .debug_loc     0x000000f2      0x120 Sketch.o
- .debug_loc     0x00000212      0x4c6 src/libraries/DHT_sensor_library/DHT.o
- .debug_loc     0x000006d8       0xd8 src/libraries/Keypad/src/Key.o
- .debug_loc     0x000007b0      0x61a src/libraries/Keypad/src/Keypad.o
- .debug_loc     0x00000dca      0xa71 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_loc     0x0000183b      0x8d7 src/libraries/Servo/src/avr/Servo.o
- .debug_loc     0x00002112       0x82 TemperatureControl/TemperatureControl.o
- .debug_loc     0x00002194      0x1b0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x00002344     0x1c87 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x00003fcb      0x28d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x00004258      0x11c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_loc     0x00004374      0x56b D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x000048df      0x4dc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x000000f2       0xcb MotorControl/MotorControl.o
+ .debug_loc     0x000001bd       0x83 RGBControl/RGBControl.o
+ .debug_loc     0x00000240      0x120 Sketch.o
+ .debug_loc     0x00000360      0x4c6 src/libraries/DHT_sensor_library/DHT.o
+ .debug_loc     0x00000826       0xd8 src/libraries/Keypad/src/Key.o
+ .debug_loc     0x000008fe      0x61a src/libraries/Keypad/src/Keypad.o
+ .debug_loc     0x00000f18      0xa71 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_loc     0x00001989      0x8d7 src/libraries/Servo/src/avr/Servo.o
+ .debug_loc     0x00002260       0x82 TemperatureControl/TemperatureControl.o
+ .debug_loc     0x000022e2       0x3b WindowControl/WindowControl.o
+ .debug_loc     0x0000231d      0x1b0 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x000024cd     0x1c87 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00004154      0x28d D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x000043e1      0x11c D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_loc     0x000044fd      0x56b D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00004a68      0x3d6 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_loc     0x00004e3e      0x4dc D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2506,25 +2607,29 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x5a0
+.debug_ranges   0x00000000      0x620
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x20 MenuControl/MenuControl.o
- .debug_ranges  0x00000020       0x28 Sketch.o
- .debug_ranges  0x00000048       0x68 src/libraries/DHT_sensor_library/DHT.o
- .debug_ranges  0x000000b0       0x20 src/libraries/Keypad/src/Key.o
- .debug_ranges  0x000000d0       0xb0 src/libraries/Keypad/src/Keypad.o
- .debug_ranges  0x00000180      0x108 src/libraries/LiquidCrystal/src/LiquidCrystal.o
- .debug_ranges  0x00000288       0x90 src/libraries/Servo/src/avr/Servo.o
- .debug_ranges  0x00000318       0x18 TemperatureControl/TemperatureControl.o
- .debug_ranges  0x00000330       0x10 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
- .debug_ranges  0x00000340       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x00000378       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000398      0x120 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x000004b8       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x000004f0       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
- .debug_ranges  0x00000510       0x28 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x00000538       0x58 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x00000590       0x10 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x00000020       0x20 MotorControl/MotorControl.o
+ .debug_ranges  0x00000040       0x18 RGBControl/RGBControl.o
+ .debug_ranges  0x00000058       0x28 Sketch.o
+ .debug_ranges  0x00000080       0x68 src/libraries/DHT_sensor_library/DHT.o
+ .debug_ranges  0x000000e8       0x20 src/libraries/Keypad/src/Key.o
+ .debug_ranges  0x00000108       0xb0 src/libraries/Keypad/src/Keypad.o
+ .debug_ranges  0x000001b8      0x108 src/libraries/LiquidCrystal/src/LiquidCrystal.o
+ .debug_ranges  0x000002c0       0x90 src/libraries/Servo/src/avr/Servo.o
+ .debug_ranges  0x00000350       0x18 TemperatureControl/TemperatureControl.o
+ .debug_ranges  0x00000368       0x10 WindowControl/WindowControl.o
+ .debug_ranges  0x00000378       0x10 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(abi.o)
+ .debug_ranges  0x00000388       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000003c0       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x000003e0      0x120 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000500       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000538       0x20 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_analog.o)
+ .debug_ranges  0x00000558       0x28 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000580       0x38 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(WMath.o)
+ .debug_ranges  0x000005b8       0x58 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x00000610       0x10 D:\Development\Embeded 2\DetSmarteHus\DetSmarteHus\ArduinoCore\Debug\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)

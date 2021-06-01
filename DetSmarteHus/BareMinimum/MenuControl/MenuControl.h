@@ -9,8 +9,12 @@
 
 #include <Arduino.h>
 #include <LiquidCrystal.h>
+#include <Servo.h>
 
 extern LiquidCrystal lcd;
+
+//Servo variables
+extern Servo servoMotor;
 
 //Menu Stages variables
 extern int currentMenuStage;
@@ -34,9 +38,6 @@ extern int currentSetHumidity;
 //Window variables
 extern bool WindowIsOpen;
 extern bool windowAutoMode;
-
-//Loads the right menu based on menuStage
-void lcdMenuLoader(int menuStage, int nsv);
 
 //Sets the menu stage
 void menuController(char keyPress);

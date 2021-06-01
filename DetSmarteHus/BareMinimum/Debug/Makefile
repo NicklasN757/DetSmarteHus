@@ -52,6 +52,7 @@ SUBDIRS :=  \
 ../include/libraries/Servo/src/stm32f4/ \
 ../MenuControl \
 ../MotorControl \
+../RGBControl \
 ../WindowControl \
 ../TemperatureControl \
 ../src/ \
@@ -77,6 +78,7 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../MenuControl/MenuControl.cpp \
 ../MotorControl/MotorControl.cpp \
+../RGBControl/RGBControl.cpp \
 ../Sketch.cpp \
 ../src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.cpp \
 ../src/libraries/DHT_sensor_library/DHT.cpp \
@@ -104,6 +106,7 @@ ASM_SRCS +=
 OBJS +=  \
 MenuControl/MenuControl.o \
 MotorControl/MotorControl.o \
+RGBControl/RGBControl.o \
 Sketch.o \
 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o \
 src/libraries/DHT_sensor_library/DHT.o \
@@ -124,6 +127,7 @@ WindowControl/WindowControl.o
 OBJS_AS_ARGS +=  \
 MenuControl/MenuControl.o \
 MotorControl/MotorControl.o \
+RGBControl/RGBControl.o \
 Sketch.o \
 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.o \
 src/libraries/DHT_sensor_library/DHT.o \
@@ -144,6 +148,7 @@ WindowControl/WindowControl.o
 C_DEPS +=  \
 MenuControl/MenuControl.d \
 MotorControl/MotorControl.d \
+RGBControl/RGBControl.d \
 Sketch.d \
 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.d \
 src/libraries/DHT_sensor_library/DHT.d \
@@ -164,6 +169,7 @@ WindowControl/WindowControl.d
 C_DEPS_AS_ARGS +=  \
 MenuControl/MenuControl.d \
 MotorControl/MotorControl.d \
+RGBControl/RGBControl.d \
 Sketch.d \
 src/libraries/Adafruit_Unified_Sensor/Adafruit_Sensor.d \
 src/libraries/DHT_sensor_library/DHT.d \
@@ -204,6 +210,13 @@ MenuControl/MenuControl.o: ../MenuControl/MenuControl.cpp
 	
 
 MotorControl/MotorControl.o: ../MotorControl/MotorControl.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=108013 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0010 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include" -I"..\\..\ArduinoCore\include\core" -I"..\\..\ArduinoCore\include\variants\mega" -I"..\include\libraries\LiquidCrystal\src" -I"..\include\libraries\Adafruit_Unified_Sensor" -I"..\include\libraries\DHT_sensor_library" -I"..\include\libraries\Keypad\src" -I"..\include\libraries\Servo\src" -I"..\include\libraries\Servo\src\avr" -I"..\include\libraries\Servo\src\mbed" -I"..\include\libraries\Servo\src\megaavr" -I"..\include\libraries\Servo\src\nrf52" -I"..\include\libraries\Servo\src\sam" -I"..\include\libraries\Servo\src\samd" -I"..\include\libraries\Servo\src\stm32f4"  -O0 -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -w -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+RGBControl/RGBControl.o: ../RGBControl/RGBControl.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DDEBUG -DF_CPU=16000000L -DARDUINO=108013 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x0010 -DUSB_MANUFACTURER="\"Arduino LLC\""  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\include" -I"..\\..\ArduinoCore\include\core" -I"..\\..\ArduinoCore\include\variants\mega" -I"..\include\libraries\LiquidCrystal\src" -I"..\include\libraries\Adafruit_Unified_Sensor" -I"..\include\libraries\DHT_sensor_library" -I"..\include\libraries\Keypad\src" -I"..\include\libraries\Servo\src" -I"..\include\libraries\Servo\src\avr" -I"..\include\libraries\Servo\src\mbed" -I"..\include\libraries\Servo\src\megaavr" -I"..\include\libraries\Servo\src\nrf52" -I"..\include\libraries\Servo\src\sam" -I"..\include\libraries\Servo\src\samd" -I"..\include\libraries\Servo\src\stm32f4"  -O0 -fno-threadsafe-statics -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -w -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega2560" -c -std=gnu++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

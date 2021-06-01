@@ -34,16 +34,18 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
  ..\\..\ArduinoCore\include\variants\mega/pins_arduino.h \
- ..\include\libraries\Servo\src/Servo.h \
- ..\include\libraries\Servo\src/avr/ServoTimers.h \
  ..\include\libraries\LiquidCrystal\src/LiquidCrystal.h \
  ..\\..\ArduinoCore\include\core/Print.h \
  ..\include\libraries\Keypad\src/Keypad.h \
- ..\include\libraries\Keypad\src/Key.h .././MenuControl/MenuControl.h \
+ ..\include\libraries\Keypad\src/Key.h \
+ ..\include\libraries\Servo\src/Servo.h \
+ ..\include\libraries\Servo\src/avr/ServoTimers.h \
+ .././MenuControl/MenuControl.h \
  .././TemperatureControl/TemperatureControl.h \
  ..\include\libraries\Adafruit_Unified_Sensor/Adafruit_Sensor.h \
  ..\include\libraries\DHT_sensor_library/DHT.h \
- .././MotorControl/MotorControl.h .././WindowControl/WindowControl.h
+ .././MotorControl/MotorControl.h .././WindowControl/WindowControl.h \
+ .././RGBControl/RGBControl.h
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -115,10 +117,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\\..\ArduinoCore\include\variants\mega/pins_arduino.h:
 
-..\include\libraries\Servo\src/Servo.h:
-
-..\include\libraries\Servo\src/avr/ServoTimers.h:
-
 ..\include\libraries\LiquidCrystal\src/LiquidCrystal.h:
 
 ..\\..\ArduinoCore\include\core/Print.h:
@@ -126,6 +124,10 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ..\include\libraries\Keypad\src/Keypad.h:
 
 ..\include\libraries\Keypad\src/Key.h:
+
+..\include\libraries\Servo\src/Servo.h:
+
+..\include\libraries\Servo\src/avr/ServoTimers.h:
 
 .././MenuControl/MenuControl.h:
 
@@ -138,3 +140,5 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././MotorControl/MotorControl.h:
 
 .././WindowControl/WindowControl.h:
+
+.././RGBControl/RGBControl.h:

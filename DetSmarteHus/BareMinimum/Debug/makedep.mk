@@ -6,6 +6,8 @@ MenuControl\MenuControl.cpp
 
 MotorControl\MotorControl.cpp
 
+RGBControl\RGBControl.cpp
+
 Sketch.cpp
 
 src\libraries\Adafruit_Unified_Sensor\Adafruit_Sensor.cpp

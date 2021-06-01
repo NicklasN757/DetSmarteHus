@@ -1,8 +1,6 @@
 #include "MenuControl.h"
 
-int ns = NULL;
-
-void lcdMenuLoader(int menuStage = 0, int nsv = 0)
+void lcdMenuLoader(int menuStage = 0)
 {
 	switch (menuStage)
 	{
@@ -367,10 +365,13 @@ void menuController(char keyPress)
 						if (WindowIsOpen)
 						{
 							WindowIsOpen = false;
+							servoMotor.write(180);
+							
 						}
 						else if (!WindowIsOpen)
 						{
 							WindowIsOpen = true;
+							servoMotor.write(0);
 						}
 					}
 					else if (keyPress == 'B')
@@ -422,5 +423,5 @@ void menuController(char keyPress)
 		}
 	}
 	
-	lcdMenuLoader(currentMenuStage, ns);	
+	lcdMenuLoader(currentMenuStage);	
 }
